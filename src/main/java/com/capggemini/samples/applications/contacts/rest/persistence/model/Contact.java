@@ -1,4 +1,4 @@
-package com.capggemini.samples.applications.rest;
+package com.capggemini.samples.applications.contacts.rest.persistence.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

@@ -1,4 +1,4 @@
-package com.capggemini.samples.applications.rest;
+package com.capggemini.samples.applications.contacts.rest.services;
 
 import java.util.List;
 
@@ -18,6 +18,8 @@ import javax.ws.rs.core.MediaType;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.capggemini.samples.applications.contacts.rest.persistence.model.Contact;
 
 @Path("/contact")
 public class ContactService {
