@@ -26,10 +26,13 @@ public class ContactService {
 
 	Logger logger = LoggerFactory.getLogger(ContactService.class);
 
-	EntityManagerFactory entityManagerFactory;
+	EntityManagerFactory entityManagerFactory = null;
+	EntityManager entityManager= null;
 
 	public ContactService(EntityManagerFactory entityManagerFactory) {
 		this.entityManagerFactory = entityManagerFactory;
+		this.entityManager = entityManagerFactory
+				.createEntityManager();
 	}
 
 	@SuppressWarnings("unchecked")
@@ -37,10 +40,24 @@ public class ContactService {
 	@Produces({ MediaType.APPLICATION_JSON })
 	public List<Contact> getContactList() {
 		logger.debug("Entering ContactService.getContactList()");
-
-		EntityManager entityManager = entityManagerFactory
-				.createEntityManager();
 		Query q = entityManager.createQuery("SELECT x from Contact x");
+		logger.debug("Exiting ContactService.getContactList()");
+
+		return (List<Contact>) q.getResultList();
+	}
+
+	@SuppressWarnings("unchecked")
+	@Path("/{offset}-{number}")
+	@GET
+	@Produces({ MediaType.APPLICATION_JSON })
+	public List<Contact> paginatedContactList(@PathParam("offset") int offset,
+			@PathParam("number") int number) {
+		logger.debug("Entering ContactService.getContactList()");
+
+		Query q = entityManager.createQuery("SELECT x from Contact x");
+		q.setFirstResult(offset);
+		q.setMaxResults(number);
+
 		logger.debug("Exiting ContactService.getContactList()");
 
 		return (List<Contact>) q.getResultList();
@@ -54,8 +71,6 @@ public class ContactService {
 			@FormParam("lastName") String lastName,
 			@FormParam("email") String email) {
 
-		EntityManager entityManager = entityManagerFactory
-				.createEntityManager();
 		Contact contact = new Contact();
 		contact.setContactId(contactId);
 		contact.setFirstName(firstName);
@@ -79,13 +94,11 @@ public class ContactService {
 
 	@GET
 	@Path("/{contactId}")
-	@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
+	@Produces({ MediaType.APPLICATION_JSON })
 	public Contact getContact(@PathParam("contactId") int contactId) {
 		logger.debug("Entering ContactService.getContact() contactId"
 				+ contactId);
 
-		EntityManager entityManager = entityManagerFactory
-				.createEntityManager();
 		Contact contact = entityManager.find(Contact.class, contactId);
 		logger.debug("Exiting ContactService.getContact()");
 
@@ -102,8 +115,7 @@ public class ContactService {
 			@FormParam("email") String email) {
 		logger.debug("Entering ContactService.update() contactId" + contactId);
 
-		EntityManager entityManager = entityManagerFactory
-				.createEntityManager();
+
 		Contact contact = new Contact();
 		contact.setContactId(contactId);
 		contact.setFirstName(firstName);
@@ -130,8 +142,7 @@ public class ContactService {
 	public void deleteContact(@PathParam("contactId") int contactId) {
 		logger.debug("Entering ContactService.deleteContact() contactId "
 				+ contactId);
-		EntityManager entityManager = entityManagerFactory
-				.createEntityManager();
+
 		try {
 			entityManager.getTransaction().begin();
 			Contact contact = entityManager.find(Contact.class, contactId);

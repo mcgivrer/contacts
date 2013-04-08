@@ -1,0 +1,63 @@
+@media screen {
+	html * {
+		margin: 0px;
+		padding: 0px;
+	}
+	body {
+		font-family: Tahoma, Verdana, Arial, sans serif;
+		font-size: 11pt;
+	}
+	section.page header {
+		background-color: #000;
+		color: #fff;
+		padding: 10px 6px;
+		display: block;
+		height: 64px;
+	}
+	section.page header h1,section.page header h2 {
+		display: inline-block;
+		margin: 4px;
+		padding: 10px 4px;
+	}
+	section.page header h1 {
+		font-size: 24pt;
+	}
+	section.page header h2 {
+		font-size: 18pt;
+	}
+	section.page header div.user {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		float: right;
+		padding: 5px;
+		padding-right: 10px;
+		font-size: 8pt;
+		min-width: 120px;
+	}
+	section.page header div.user img.avatar {
+		width: 32px;
+		height: 32px;
+		border: 0px;
+	}
+	section.page header div.user a {
+		color: #fff;
+		/*text-decoration:none;*/
+	}
+	section.page header div.user ul li {
+		list-style: none;
+		display: inline-block;
+	}
+	section.page section.content {
+		background-color: #fff;
+		color: #000;
+		min-height: 200px;
+	}
+	section.page footer {
+		background-color: #000;
+		color: #fff;
+		text-align: center;
+		min-height: 32px;
+		font-size: 10pt;
+	}
+}

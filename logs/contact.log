@@ -1,0 +1,1127 @@
+0    [main] DEBUG com.capggemini.samples.applications.contacts.rest.application.Application  - Entering Application.getSingletons()
+149  [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+197  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration boolean -> org.hibernate.type.BooleanType@143153c
+203  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration boolean -> org.hibernate.type.BooleanType@143153c
+204  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@143153c
+206  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@1e93446
+209  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration true_false -> org.hibernate.type.TrueFalseType@674286
+210  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration yes_no -> org.hibernate.type.YesNoType@2e77d4
+214  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration byte -> org.hibernate.type.ByteType@10f0fbd
+215  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration byte -> org.hibernate.type.ByteType@10f0fbd
+216  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@10f0fbd
+218  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration character -> org.hibernate.type.CharacterType@d1544a
+219  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration char -> org.hibernate.type.CharacterType@d1544a
+220  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@d1544a
+223  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration short -> org.hibernate.type.ShortType@1920a91
+224  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration short -> org.hibernate.type.ShortType@1920a91
+225  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@1920a91
+227  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration integer -> org.hibernate.type.IntegerType@199e94c
+228  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration int -> org.hibernate.type.IntegerType@199e94c
+229  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@199e94c
+232  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration long -> org.hibernate.type.LongType@13692c8
+233  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration long -> org.hibernate.type.LongType@13692c8
+234  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Long -> org.hibernate.type.LongType@13692c8
+253  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration float -> org.hibernate.type.FloatType@3cbf64
+255  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration float -> org.hibernate.type.FloatType@3cbf64
+257  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@3cbf64
+261  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration double -> org.hibernate.type.DoubleType@1dddb91
+268  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration double -> org.hibernate.type.DoubleType@1dddb91
+269  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1dddb91
+273  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@1b208de
+274  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@1b208de
+276  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@659aeb
+278  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@659aeb
+280  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration string -> org.hibernate.type.StringType@1d5cf30
+281  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.String -> org.hibernate.type.StringType@1d5cf30
+282  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration url -> org.hibernate.type.UrlType@21541f
+284  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.net.URL -> org.hibernate.type.UrlType@21541f
+287  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration date -> org.hibernate.type.DateType@b522aa
+288  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Date -> org.hibernate.type.DateType@b522aa
+290  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration time -> org.hibernate.type.TimeType@15d2bf6
+291  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@15d2bf6
+295  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration timestamp -> org.hibernate.type.TimestampType@123e236
+296  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@123e236
+297  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@123e236
+308  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@b1307a
+310  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration calendar -> org.hibernate.type.CalendarType@11b6813
+319  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@11b6813
+320  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@11b6813
+321  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@1eafca5
+324  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration locale -> org.hibernate.type.LocaleType@d22976
+324  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@d22976
+326  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration currency -> org.hibernate.type.CurrencyType@15212c7
+327  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@15212c7
+329  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration timezone -> org.hibernate.type.TimeZoneType@1921f18
+332  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@1921f18
+334  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration class -> org.hibernate.type.ClassType@109fa8b
+335  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@109fa8b
+338  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@15bc2a6
+339  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@15bc2a6
+340  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@18b745f
+342  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@1fc7585
+344  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration binary -> org.hibernate.type.BinaryType@50cabc
+345  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration byte[] -> org.hibernate.type.BinaryType@50cabc
+346  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [B -> org.hibernate.type.BinaryType@50cabc
+348  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@1319b33
+349  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@1319b33
+350  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@1319b33
+351  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration image -> org.hibernate.type.ImageType@1222039
+354  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration characters -> org.hibernate.type.CharArrayType@a6e22f
+355  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration char[] -> org.hibernate.type.CharArrayType@a6e22f
+355  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [C -> org.hibernate.type.CharArrayType@a6e22f
+357  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@234d3a
+359  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@234d3a
+359  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@234d3a
+361  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration text -> org.hibernate.type.TextType@1ef3215
+367  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration blob -> org.hibernate.type.BlobType@1585986
+368  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@1585986
+369  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@1e535ed
+374  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration clob -> org.hibernate.type.ClobType@cb6e1d
+375  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@cb6e1d
+377  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@ece1b
+379  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration serializable -> org.hibernate.type.SerializableType@918d7f
+383  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration object -> org.hibernate.type.ObjectType@1a87817
+384  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@1a87817
+386  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@1376d5c
+387  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@1eced15
+387  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@1c13614
+387  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@1c58b22
+387  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@3181c9
+388  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@3fb859
+388  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@15ff7e8
+388  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@18cd143
+412  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+439  [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.1.4.Final}
+457  [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+460  [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+486  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+500  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+511  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+511  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+513  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [hilo] -> [org.hibernate.id.TableHiLoGenerator]
+514  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+515  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+515  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+516  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.SequenceGenerator]
+517  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+517  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+518  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+518  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+527  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+528  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+538  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration boolean -> org.hibernate.type.BooleanType@143153c
+547  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration boolean -> org.hibernate.type.BooleanType@143153c
+547  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@143153c
+547  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@1e93446
+548  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration true_false -> org.hibernate.type.TrueFalseType@674286
+548  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration yes_no -> org.hibernate.type.YesNoType@2e77d4
+548  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration byte -> org.hibernate.type.ByteType@10f0fbd
+548  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration byte -> org.hibernate.type.ByteType@10f0fbd
+548  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@10f0fbd
+548  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration character -> org.hibernate.type.CharacterType@d1544a
+548  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration char -> org.hibernate.type.CharacterType@d1544a
+549  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@d1544a
+549  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration short -> org.hibernate.type.ShortType@1920a91
+549  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration short -> org.hibernate.type.ShortType@1920a91
+549  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@1920a91
+549  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration integer -> org.hibernate.type.IntegerType@199e94c
+549  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration int -> org.hibernate.type.IntegerType@199e94c
+549  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@199e94c
+549  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration long -> org.hibernate.type.LongType@13692c8
+550  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration long -> org.hibernate.type.LongType@13692c8
+550  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Long -> org.hibernate.type.LongType@13692c8
+550  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration float -> org.hibernate.type.FloatType@3cbf64
+550  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration float -> org.hibernate.type.FloatType@3cbf64
+550  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@3cbf64
+550  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration double -> org.hibernate.type.DoubleType@1dddb91
+550  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration double -> org.hibernate.type.DoubleType@1dddb91
+551  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1dddb91
+551  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@1b208de
+551  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@1b208de
+551  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@659aeb
+551  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@659aeb
+551  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration string -> org.hibernate.type.StringType@1d5cf30
+551  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.String -> org.hibernate.type.StringType@1d5cf30
+551  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration url -> org.hibernate.type.UrlType@21541f
+552  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.net.URL -> org.hibernate.type.UrlType@21541f
+552  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration date -> org.hibernate.type.DateType@b522aa
+552  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Date -> org.hibernate.type.DateType@b522aa
+552  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration time -> org.hibernate.type.TimeType@15d2bf6
+552  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@15d2bf6
+552  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration timestamp -> org.hibernate.type.TimestampType@123e236
+552  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@123e236
+553  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@123e236
+553  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@b1307a
+553  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration calendar -> org.hibernate.type.CalendarType@11b6813
+553  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@11b6813
+553  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@11b6813
+553  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@1eafca5
+553  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration locale -> org.hibernate.type.LocaleType@d22976
+554  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@d22976
+554  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration currency -> org.hibernate.type.CurrencyType@15212c7
+554  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@15212c7
+554  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration timezone -> org.hibernate.type.TimeZoneType@1921f18
+554  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@1921f18
+554  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration class -> org.hibernate.type.ClassType@109fa8b
+554  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@109fa8b
+554  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@15bc2a6
+555  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@15bc2a6
+555  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@18b745f
+555  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@1fc7585
+555  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration binary -> org.hibernate.type.BinaryType@50cabc
+555  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration byte[] -> org.hibernate.type.BinaryType@50cabc
+555  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [B -> org.hibernate.type.BinaryType@50cabc
+555  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@1319b33
+555  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@1319b33
+556  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@1319b33
+556  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration image -> org.hibernate.type.ImageType@1222039
+556  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration characters -> org.hibernate.type.CharArrayType@a6e22f
+556  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration char[] -> org.hibernate.type.CharArrayType@a6e22f
+556  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [C -> org.hibernate.type.CharArrayType@a6e22f
+556  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@234d3a
+556  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@234d3a
+556  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@234d3a
+556  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration text -> org.hibernate.type.TextType@1ef3215
+557  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration blob -> org.hibernate.type.BlobType@1585986
+557  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@1585986
+557  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@1e535ed
+557  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration clob -> org.hibernate.type.ClobType@cb6e1d
+557  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@cb6e1d
+557  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@ece1b
+557  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration serializable -> org.hibernate.type.SerializableType@918d7f
+557  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration object -> org.hibernate.type.ObjectType@1a87817
+557  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@1a87817
+558  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@190e10f
+558  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@a7c898
+558  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@1628c1c
+558  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@dcaf16
+558  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@6ad0df
+558  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@b6e1b6
+558  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@9c8dbd
+558  [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@1d75a8
+559  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+559  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+559  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+559  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+559  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [hilo] -> [org.hibernate.id.TableHiLoGenerator]
+559  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+559  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+559  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+560  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.SequenceGenerator]
+560  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+560  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+560  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+560  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+560  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+560  [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+561  [main] DEBUG org.hibernate.ejb.Ejb3Configuration  - Look up for persistence unit: contacts
+806  [main] DEBUG org.hibernate.ejb.Ejb3Configuration  - Detect class: true; detect hbm: true
+820  [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Searching mapped entities in jar/par: file:/home/frederic/Dropbox/Projects/java/contacts/target/classes/
+829  [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Filtering: com.capggemini.samples.applications.contacts.rest.persistence.model.Contact
+916  [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Java element filter matched for com.capggemini.samples.applications.contacts.rest.persistence.model.Contact
+918  [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Filtering: com.capggemini.samples.applications.contacts.rest.services.ContactService
+924  [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Filtering: com.capggemini.samples.applications.contacts.rest.application.Application
+948  [main] DEBUG org.hibernate.ejb.Ejb3Configuration  - Detect class: true; detect hbm: true
+954  [main] DEBUG org.hibernate.ejb.Ejb3Configuration  - Creating Factory: contacts
+987  [main] DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl  - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+988  [main] DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl  - Adding Integrator [org.hibernate.ejb.event.JpaIntegrator].
+1022 [main] DEBUG org.hibernate.ejb.util.NamingHelper  - No JNDI name configured for binding Ejb3Configuration
+1035 [main] DEBUG org.hibernate.cfg.Configuration  - Preparing to build session factory with filters : {}
+1066 [main] DEBUG org.hibernate.cfg.Configuration  - Processing hbm.xml files
+1067 [main] DEBUG org.hibernate.cfg.Configuration  - Process annotated classes
+1072 [main] DEBUG org.hibernate.cfg.AnnotationBinder  - Binding entity from annotated class: com.capggemini.samples.applications.contacts.rest.persistence.model.Contact
+1105 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+1108 [main] DEBUG org.hibernate.cfg.AnnotationBinder  - No value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+1117 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder  - Import with entity name Contact
+1123 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder  - Bind entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact on table Contact
+1160 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Contact), mappingColumn=contactId, insertable=true, updatable=true, unique=false}
+1175 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - MetadataSourceProcessor property contactId with lazy=false
+1191 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - building SimpleValue for contactId
+1202 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property contactId
+1213 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Contact), mappingColumn=email, insertable=true, updatable=true, unique=false}
+1224 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - MetadataSourceProcessor property email with lazy=false
+1231 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - building SimpleValue for email
+1231 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property email
+1231 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Contact), mappingColumn=firstName, insertable=true, updatable=true, unique=false}
+1231 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - MetadataSourceProcessor property firstName with lazy=false
+1232 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - building SimpleValue for firstName
+1232 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property firstName
+1232 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Contact), mappingColumn=lastName, insertable=true, updatable=true, unique=false}
+1232 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - MetadataSourceProcessor property lastName with lazy=false
+1232 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - building SimpleValue for lastName
+1232 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property lastName
+1235 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - Setting SimpleValue typeName for contactId
+1236 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - Setting SimpleValue typeName for email
+1236 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - Setting SimpleValue typeName for firstName
+1236 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - Setting SimpleValue typeName for lastName
+1237 [main] DEBUG org.hibernate.cfg.Configuration  - Processing fk mappings (*ToOne and JoinedSubclass)
+1245 [main] DEBUG org.hibernate.cfg.Configuration  - Processing extends queue
+1251 [main] DEBUG org.hibernate.cfg.Configuration  - Processing extends queue
+1251 [main] DEBUG org.hibernate.cfg.Configuration  - Processing collection mappings
+1251 [main] DEBUG org.hibernate.cfg.Configuration  - Processing native query and ResultSetMapping mappings
+1252 [main] DEBUG org.hibernate.cfg.Configuration  - Processing association property references
+1252 [main] DEBUG org.hibernate.cfg.Configuration  - Processing foreign key constraints
+1315 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+1319 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+1320 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: true
+1321 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [org.hsqldb.jdbcDriver] at URL [jdbc:hsqldb:file:db/contacts]
+1322 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=sa, autocommit=true, release_mode=auto}
+1365 [main] DEBUG org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - Opening new JDBC connection
+1787 [main] DEBUG org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - Created connection to: jdbc:hsqldb:file:db/contacts, Isolation Level: 2
+1808 [main] DEBUG org.hibernate.engine.jdbc.internal.JdbcServicesImpl  - Database ->
+       name : HSQL Database Engine
+    version : 1.8.0
+      major : 1
+      minor : 8
+1809 [main] DEBUG org.hibernate.engine.jdbc.internal.JdbcServicesImpl  - Driver ->
+       name : HSQL Database Engine Driver
+    version : 1.8.0
+      major : 1
+      minor : 8
+1810 [main] DEBUG org.hibernate.engine.jdbc.internal.JdbcServicesImpl  - JDBC version : 3.0
+1855 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+1868 [main] INFO  org.hibernate.engine.jdbc.internal.LobCreatorBuilder  - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+1882 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Automatic flush during beforeCompletion(): disabled
+1883 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Automatic session close at end of transaction: disabled
+1884 [main] DEBUG org.hibernate.cfg.SettingsFactory  - JDBC batch size: 15
+1884 [main] DEBUG org.hibernate.cfg.SettingsFactory  - JDBC batch updates for versioned data: disabled
+1885 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Scrollable result sets: enabled
+1885 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Wrap result sets: disabled
+1885 [main] DEBUG org.hibernate.cfg.SettingsFactory  - JDBC3 getGeneratedKeys(): disabled
+1886 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Connection release mode: auto
+1889 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+1893 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Default batch fetch size: 1
+1894 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Generate SQL with comments: disabled
+1894 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Order SQL updates by primary key: disabled
+1895 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Order SQL inserts for batching: disabled
+1895 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Query translator: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory
+1898 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+1899 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Query language substitutions: {}
+1900 [main] DEBUG org.hibernate.cfg.SettingsFactory  - JPA-QL strict compliance: enabled
+1901 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Second-level cache: enabled
+1901 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Query cache: disabled
+1901 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+1902 [main] DEBUG org.hibernate.cfg.SettingsFactory  - org.hibernate.cache.internal.NoCachingRegionFactory did not provide constructor accepting java.util.Properties; attempting no-arg constructor.
+1904 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Optimize cache for minimal puts: disabled
+1904 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Structured second-level cache entries: disabled
+1905 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Statistics: disabled
+1906 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Deleted entity synthetic identifier rollback: disabled
+1906 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Default entity-mode: pojo
+1906 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Named query checking : enabled
+1907 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+1907 [main] DEBUG org.hibernate.cfg.SettingsFactory  - multi-tenancy strategy : NONE
+1935 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Building session factory
+1960 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Session factory constructed with filter configurations : {}
+1961 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Instantiating session factory with properties: {java.vendor=Oracle Corporation, sun.java.launcher=SUN_STANDARD, hibernate.connection.url=jdbc:hsqldb:file:db/contacts, sun.management.compiler=HotSpot Tiered Compilers, hibernate.ejb.discard_pc_on_close=false, hibernate.transaction.flush_before_completion=false, os.name=Linux, sun.boot.class.path=/usr/lib/jvm/java-7-openjdk-i386/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/netx.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/plugin.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/classes, sun.desktop=gnome, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.7.0_15-b20, hibernate.connection.autocommit=true, javax.persistence.jdbc.user=sa, user.name=frederic, guice.disable.misplaced.annotation.check=true, hibernate.connection.release_mode=auto, user.language=fr, sun.boot.library.path=/usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386, classworlds.conf=/opt/tools/java/tools/maven/3.0.5/bin/m2.conf, java.version=1.7.0_15, user.timezone=Europe/Paris, sun.arch.data.model=32, java.endorsed.dirs=/usr/lib/jvm/java-7-openjdk-i386/jre/lib/endorsed, sun.cpu.isalist=, sun.jnu.encoding=UTF-8, file.encoding.pkg=sun.io, file.separator=/, java.specification.name=Java Platform API Specification, java.class.version=51.0, user.country=FR, securerandom.source=file:/dev/./urandom, java.home=/usr/lib/jvm/java-7-openjdk-i386/jre, java.vm.info=mixed mode, os.version=3.2.0-39-generic-pae, hibernate.transaction.factory_class=org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory, hibernate.query.jpaql_strict_compliance=true, path.separator=:, java.vm.version=23.7-b01, javax.persistence.jdbc.url=jdbc:hsqldb:file:db/contacts, java.awt.printerjob=sun.print.PSPrinterJob, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.X11.XToolkit, hibernate.connection.username=sa, user.home=/home/frederic, java.specification.vendor=Oracle Corporation, hibernate.hbm2ddl.auto=update, java.library.path=/usr/java/packages/lib/i386:/usr/lib/jni:/lib:/usr/lib, java.vendor.url=http://java.oracle.com/, hibernate.connection.driver_class=org.hsqldb.jdbcDriver, java.vm.vendor=Oracle Corporation, maven.home=/opt/tools/java/tools/maven/3.0.5, java.runtime.name=OpenJDK Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher jetty:run, java.class.path=/opt/tools/java/tools/maven/3.0.5/boot/plexus-classworlds-2.4.jar, hibernate.bytecode.use_reflection_optimizer=false, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.7, sun.cpu.endian=little, javax.persistence.jdbc.driver=org.hsqldb.jdbcDriver, sun.os.patch.level=unknown, java.io.tmpdir=/tmp, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, os.arch=i386, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.ext.dirs=/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext:/usr/java/packages/lib/ext, javax.persistence.jdbc.password=, user.dir=/home/frederic/Dropbox/Projects/java/contacts, line.separator=
+, java.vm.name=OpenJDK Server VM, file.encoding=UTF-8, hibernate.use_identifier_rollback=false, java.specification.version=1.7, hibernate.show_sql=true}
+2057 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Setting dialect [org.hibernate.dialect.HSQLDialect]
+2151 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  - Static SQL for entity: com.capggemini.samples.applications.contacts.rest.persistence.model.Contact
+2153 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Version select: select contactId from Contact where contactId =?
+2154 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Snapshot select: select contact_.contactId, contact_.email as email0_, contact_.firstName as firstName0_, contact_.lastName as lastName0_ from Contact contact_ where contact_.contactId=?
+2155 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Insert 0: insert into Contact (email, firstName, lastName, contactId) values (?, ?, ?, ?)
+2155 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Update 0: update Contact set email=?, firstName=?, lastName=? where contactId=?
+2155 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Delete 0: delete from Contact where contactId=?
+2155 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Identity insert: insert into Contact (contactId, email, firstName, lastName) values (null, ?, ?, ?)
+2214 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [NONE]: select contact0_.contactId as contactId0_0_, contact0_.email as email0_0_, contact0_.firstName as firstName0_0_, contact0_.lastName as lastName0_0_ from Contact contact0_ where contact0_.contactId=?
+2224 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [READ]: select contact0_.contactId as contactId0_0_, contact0_.email as email0_0_, contact0_.firstName as firstName0_0_, contact0_.lastName as lastName0_0_ from Contact contact0_ where contact0_.contactId=?
+2225 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [UPGRADE]: select contact0_.contactId as contactId0_0_, contact0_.email as email0_0_, contact0_.firstName as firstName0_0_, contact0_.lastName as lastName0_0_ from Contact contact0_ where contact0_.contactId=?
+2226 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [UPGRADE_NOWAIT]: select contact0_.contactId as contactId0_0_, contact0_.email as email0_0_, contact0_.firstName as firstName0_0_, contact0_.lastName as lastName0_0_ from Contact contact0_ where contact0_.contactId=?
+2226 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [FORCE]: select contact0_.contactId as contactId0_0_, contact0_.email as email0_0_, contact0_.firstName as firstName0_0_, contact0_.lastName as lastName0_0_ from Contact contact0_ where contact0_.contactId=?
+2227 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [PESSIMISTIC_READ]: select contact0_.contactId as contactId0_0_, contact0_.email as email0_0_, contact0_.firstName as firstName0_0_, contact0_.lastName as lastName0_0_ from Contact contact0_ where contact0_.contactId=?
+2231 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [PESSIMISTIC_WRITE]: select contact0_.contactId as contactId0_0_, contact0_.email as email0_0_, contact0_.firstName as firstName0_0_, contact0_.lastName as lastName0_0_ from Contact contact0_ where contact0_.contactId=?
+2240 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [PESSIMISTIC_FORCE_INCREMENT]: select contact0_.contactId as contactId0_0_, contact0_.email as email0_0_, contact0_.firstName as firstName0_0_, contact0_.lastName as lastName0_0_ from Contact contact0_ where contact0_.contactId=?
+2241 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [OPTIMISTIC]: select contact0_.contactId as contactId0_0_, contact0_.email as email0_0_, contact0_.firstName as firstName0_0_, contact0_.lastName as lastName0_0_ from Contact contact0_ where contact0_.contactId=?
+2242 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [OPTIMISTIC_FORCE_INCREMENT]: select contact0_.contactId as contactId0_0_, contact0_.email as email0_0_, contact0_.firstName as firstName0_0_, contact0_.lastName as lastName0_0_ from Contact contact0_ where contact0_.contactId=?
+2249 [main] DEBUG org.hibernate.loader.Loader  - Static select for action ACTION_MERGE on entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact: select contact0_.contactId as contactId0_0_, contact0_.email as email0_0_, contact0_.firstName as firstName0_0_, contact0_.lastName as lastName0_0_ from Contact contact0_ where contact0_.contactId=?
+2261 [main] DEBUG org.hibernate.loader.Loader  - Static select for action ACTION_REFRESH on entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact: select contact0_.contactId as contactId0_0_, contact0_.email as email0_0_, contact0_.firstName as firstName0_0_, contact0_.lastName as lastName0_0_ from Contact contact0_ where contact0_.contactId=?
+2268 [main] DEBUG org.hibernate.internal.SessionFactoryRegistry  - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@33862f
+2283 [main] DEBUG org.hibernate.internal.SessionFactoryRegistry  - Registering SessionFactory: ba25ecc0-ae88-40bf-a7c1-229290db82ec (<unnamed>)
+2293 [main] DEBUG org.hibernate.internal.SessionFactoryRegistry  - Not binding SessionFactory to JNDI, no JNDI name configured
+2294 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Instantiated session factory
+2314 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000228: Running hbm2ddl schema update
+2314 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000102: Fetching database metadata
+2317 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000396: Updating schema
+2325 [main] DEBUG org.hibernate.cfg.Configuration  - Processing hbm.xml files
+2325 [main] DEBUG org.hibernate.cfg.Configuration  - Process annotated classes
+2326 [main] DEBUG org.hibernate.cfg.Configuration  - Processing fk mappings (*ToOne and JoinedSubclass)
+2326 [main] DEBUG org.hibernate.cfg.Configuration  - Processing extends queue
+2326 [main] DEBUG org.hibernate.cfg.Configuration  - Processing extends queue
+2326 [main] DEBUG org.hibernate.cfg.Configuration  - Processing collection mappings
+2326 [main] DEBUG org.hibernate.cfg.Configuration  - Processing native query and ResultSetMapping mappings
+2326 [main] DEBUG org.hibernate.cfg.Configuration  - Processing association property references
+2328 [main] DEBUG org.hibernate.cfg.Configuration  - Processing foreign key constraints
+2459 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: PUBLIC.CONTACT
+2471 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [email, lastname, firstname, contactid]
+2475 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000108: Foreign keys: []
+2476 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000126: Indexes: [sys_idx_46]
+2476 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Setting dialect [org.hibernate.dialect.HSQLDialect]
+2476 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000232: Schema update complete
+2477 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Checking 0 named HQL queries
+2477 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Checking 0 named SQL queries
+2494 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator  - Statistics initialized [enabled=false]
+2561 [main] DEBUG org.hibernate.ejb.internal.EntityManagerFactoryRegistry  - Initializing EntityManagerFactoryRegistry : org.hibernate.ejb.internal.EntityManagerFactoryRegistry@109c8df
+2562 [main] DEBUG org.hibernate.ejb.internal.EntityManagerFactoryRegistry  - Registering EntityManagerFactory: contacts 
+2653 [main] DEBUG org.hibernate.internal.SessionImpl  - Opened session at timestamp: 13654568612
+2658 [main] DEBUG com.capggemini.samples.applications.contacts.rest.application.Application  - Exiting Application.getSingletons()
+2659 [main] DEBUG com.capggemini.samples.applications.contacts.rest.application.Application  - Entering Application.getSingletons()
+2659 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration boolean -> org.hibernate.type.BooleanType@143153c
+2659 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration boolean -> org.hibernate.type.BooleanType@143153c
+2659 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@143153c
+2660 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@1e93446
+2660 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration true_false -> org.hibernate.type.TrueFalseType@674286
+2660 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration yes_no -> org.hibernate.type.YesNoType@2e77d4
+2660 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration byte -> org.hibernate.type.ByteType@10f0fbd
+2660 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration byte -> org.hibernate.type.ByteType@10f0fbd
+2660 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@10f0fbd
+2660 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration character -> org.hibernate.type.CharacterType@d1544a
+2660 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration char -> org.hibernate.type.CharacterType@d1544a
+2661 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@d1544a
+2661 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration short -> org.hibernate.type.ShortType@1920a91
+2661 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration short -> org.hibernate.type.ShortType@1920a91
+2661 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@1920a91
+2661 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration integer -> org.hibernate.type.IntegerType@199e94c
+2661 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration int -> org.hibernate.type.IntegerType@199e94c
+2661 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@199e94c
+2662 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration long -> org.hibernate.type.LongType@13692c8
+2662 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration long -> org.hibernate.type.LongType@13692c8
+2662 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Long -> org.hibernate.type.LongType@13692c8
+2662 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration float -> org.hibernate.type.FloatType@3cbf64
+2662 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration float -> org.hibernate.type.FloatType@3cbf64
+2662 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@3cbf64
+2662 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration double -> org.hibernate.type.DoubleType@1dddb91
+2662 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration double -> org.hibernate.type.DoubleType@1dddb91
+2663 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1dddb91
+2663 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@1b208de
+2663 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@1b208de
+2663 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@659aeb
+2663 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@659aeb
+2663 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration string -> org.hibernate.type.StringType@1d5cf30
+2663 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.String -> org.hibernate.type.StringType@1d5cf30
+2664 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration url -> org.hibernate.type.UrlType@21541f
+2664 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.net.URL -> org.hibernate.type.UrlType@21541f
+2664 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration date -> org.hibernate.type.DateType@b522aa
+2664 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Date -> org.hibernate.type.DateType@b522aa
+2664 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration time -> org.hibernate.type.TimeType@15d2bf6
+2664 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@15d2bf6
+2664 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration timestamp -> org.hibernate.type.TimestampType@123e236
+2664 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@123e236
+2665 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@123e236
+2665 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@b1307a
+2665 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration calendar -> org.hibernate.type.CalendarType@11b6813
+2665 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@11b6813
+2665 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@11b6813
+2665 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@1eafca5
+2665 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration locale -> org.hibernate.type.LocaleType@d22976
+2665 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@d22976
+2666 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration currency -> org.hibernate.type.CurrencyType@15212c7
+2666 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@15212c7
+2666 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration timezone -> org.hibernate.type.TimeZoneType@1921f18
+2666 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@1921f18
+2666 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration class -> org.hibernate.type.ClassType@109fa8b
+2670 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@109fa8b
+2671 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@15bc2a6
+2671 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@15bc2a6
+2672 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@18b745f
+2672 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@1fc7585
+2672 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration binary -> org.hibernate.type.BinaryType@50cabc
+2672 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration byte[] -> org.hibernate.type.BinaryType@50cabc
+2678 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [B -> org.hibernate.type.BinaryType@50cabc
+2679 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@1319b33
+2679 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@1319b33
+2679 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@1319b33
+2679 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration image -> org.hibernate.type.ImageType@1222039
+2679 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration characters -> org.hibernate.type.CharArrayType@a6e22f
+2679 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration char[] -> org.hibernate.type.CharArrayType@a6e22f
+2679 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [C -> org.hibernate.type.CharArrayType@a6e22f
+2679 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@234d3a
+2679 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@234d3a
+2680 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@234d3a
+2681 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration text -> org.hibernate.type.TextType@1ef3215
+2681 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration blob -> org.hibernate.type.BlobType@1585986
+2681 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@1585986
+2682 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@1e535ed
+2682 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration clob -> org.hibernate.type.ClobType@cb6e1d
+2682 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@cb6e1d
+2683 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@ece1b
+2683 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration serializable -> org.hibernate.type.SerializableType@918d7f
+2684 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration object -> org.hibernate.type.ObjectType@1a87817
+2684 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@1a87817
+2684 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@8c55bf
+2684 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@1517402
+2684 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@973101
+2684 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@126617
+2684 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@1ec87a2
+2684 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@1bcba63
+2684 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@170e695
+2685 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@132546d
+2688 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2689 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2689 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2689 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2689 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [hilo] -> [org.hibernate.id.TableHiLoGenerator]
+2689 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2689 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2689 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2690 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.SequenceGenerator]
+2690 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2690 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2690 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2690 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2690 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2690 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2690 [main] DEBUG org.hibernate.ejb.Ejb3Configuration  - Look up for persistence unit: contacts
+2723 [main] DEBUG org.hibernate.ejb.Ejb3Configuration  - Detect class: true; detect hbm: true
+2724 [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Searching mapped entities in jar/par: file:/home/frederic/Dropbox/Projects/java/contacts/target/classes/
+2725 [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Filtering: com.capggemini.samples.applications.contacts.rest.persistence.model.Contact
+2726 [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Java element filter matched for com.capggemini.samples.applications.contacts.rest.persistence.model.Contact
+2727 [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Filtering: com.capggemini.samples.applications.contacts.rest.services.ContactService
+2729 [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Filtering: com.capggemini.samples.applications.contacts.rest.application.Application
+2740 [main] DEBUG org.hibernate.ejb.Ejb3Configuration  - Detect class: true; detect hbm: true
+2741 [main] DEBUG org.hibernate.ejb.Ejb3Configuration  - Creating Factory: contacts
+2742 [main] DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl  - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2742 [main] DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl  - Adding Integrator [org.hibernate.ejb.event.JpaIntegrator].
+2744 [main] DEBUG org.hibernate.ejb.util.NamingHelper  - No JNDI name configured for binding Ejb3Configuration
+2752 [main] DEBUG org.hibernate.cfg.Configuration  - Preparing to build session factory with filters : {}
+2753 [main] DEBUG org.hibernate.cfg.Configuration  - Processing hbm.xml files
+2753 [main] DEBUG org.hibernate.cfg.Configuration  - Process annotated classes
+2754 [main] DEBUG org.hibernate.cfg.AnnotationBinder  - Binding entity from annotated class: com.capggemini.samples.applications.contacts.rest.persistence.model.Contact
+2759 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2760 [main] DEBUG org.hibernate.cfg.AnnotationBinder  - No value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+2761 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder  - Import with entity name Contact
+2761 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder  - Bind entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact on table Contact
+2762 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Contact), mappingColumn=contactId, insertable=true, updatable=true, unique=false}
+2762 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - MetadataSourceProcessor property contactId with lazy=false
+2762 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - building SimpleValue for contactId
+2762 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property contactId
+2762 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Contact), mappingColumn=email, insertable=true, updatable=true, unique=false}
+2762 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - MetadataSourceProcessor property email with lazy=false
+2762 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - building SimpleValue for email
+2763 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property email
+2763 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Contact), mappingColumn=firstName, insertable=true, updatable=true, unique=false}
+2764 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - MetadataSourceProcessor property firstName with lazy=false
+2764 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - building SimpleValue for firstName
+2765 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property firstName
+2765 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Contact), mappingColumn=lastName, insertable=true, updatable=true, unique=false}
+2765 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - MetadataSourceProcessor property lastName with lazy=false
+2766 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - building SimpleValue for lastName
+2766 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property lastName
+2766 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - Setting SimpleValue typeName for contactId
+2766 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - Setting SimpleValue typeName for email
+2766 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - Setting SimpleValue typeName for firstName
+2766 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - Setting SimpleValue typeName for lastName
+2766 [main] DEBUG org.hibernate.cfg.Configuration  - Processing fk mappings (*ToOne and JoinedSubclass)
+2766 [main] DEBUG org.hibernate.cfg.Configuration  - Processing extends queue
+2766 [main] DEBUG org.hibernate.cfg.Configuration  - Processing extends queue
+2766 [main] DEBUG org.hibernate.cfg.Configuration  - Processing collection mappings
+2766 [main] DEBUG org.hibernate.cfg.Configuration  - Processing native query and ResultSetMapping mappings
+2766 [main] DEBUG org.hibernate.cfg.Configuration  - Processing association property references
+2766 [main] DEBUG org.hibernate.cfg.Configuration  - Processing foreign key constraints
+2768 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2768 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2769 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: true
+2769 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [org.hsqldb.jdbcDriver] at URL [jdbc:hsqldb:file:db/contacts]
+2770 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=sa, autocommit=true, release_mode=auto}
+2776 [main] DEBUG org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - Opening new JDBC connection
+2777 [main] DEBUG org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - Created connection to: jdbc:hsqldb:file:db/contacts, Isolation Level: 2
+2778 [main] DEBUG org.hibernate.engine.jdbc.internal.JdbcServicesImpl  - Database ->
+       name : HSQL Database Engine
+    version : 1.8.0
+      major : 1
+      minor : 8
+2779 [main] DEBUG org.hibernate.engine.jdbc.internal.JdbcServicesImpl  - Driver ->
+       name : HSQL Database Engine Driver
+    version : 1.8.0
+      major : 1
+      minor : 8
+2780 [main] DEBUG org.hibernate.engine.jdbc.internal.JdbcServicesImpl  - JDBC version : 3.0
+2781 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2782 [main] INFO  org.hibernate.engine.jdbc.internal.LobCreatorBuilder  - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2783 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Automatic flush during beforeCompletion(): disabled
+2783 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Automatic session close at end of transaction: disabled
+2783 [main] DEBUG org.hibernate.cfg.SettingsFactory  - JDBC batch size: 15
+2783 [main] DEBUG org.hibernate.cfg.SettingsFactory  - JDBC batch updates for versioned data: disabled
+2784 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Scrollable result sets: enabled
+2784 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Wrap result sets: disabled
+2784 [main] DEBUG org.hibernate.cfg.SettingsFactory  - JDBC3 getGeneratedKeys(): disabled
+2784 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Connection release mode: auto
+2784 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+2785 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Default batch fetch size: 1
+2785 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Generate SQL with comments: disabled
+2785 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Order SQL updates by primary key: disabled
+2786 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Order SQL inserts for batching: disabled
+2786 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Query translator: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory
+2789 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2790 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Query language substitutions: {}
+2791 [main] DEBUG org.hibernate.cfg.SettingsFactory  - JPA-QL strict compliance: enabled
+2791 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Second-level cache: enabled
+2791 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Query cache: disabled
+2792 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2792 [main] DEBUG org.hibernate.cfg.SettingsFactory  - org.hibernate.cache.internal.NoCachingRegionFactory did not provide constructor accepting java.util.Properties; attempting no-arg constructor.
+2793 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Optimize cache for minimal puts: disabled
+2793 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Structured second-level cache entries: disabled
+2793 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Statistics: disabled
+2793 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Deleted entity synthetic identifier rollback: disabled
+2794 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Default entity-mode: pojo
+2794 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Named query checking : enabled
+2794 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2794 [main] DEBUG org.hibernate.cfg.SettingsFactory  - multi-tenancy strategy : NONE
+2794 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Building session factory
+2796 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Session factory constructed with filter configurations : {}
+2800 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Instantiating session factory with properties: {java.vendor=Oracle Corporation, sun.java.launcher=SUN_STANDARD, hibernate.connection.url=jdbc:hsqldb:file:db/contacts, sun.management.compiler=HotSpot Tiered Compilers, hibernate.ejb.discard_pc_on_close=false, hibernate.transaction.flush_before_completion=false, os.name=Linux, sun.boot.class.path=/usr/lib/jvm/java-7-openjdk-i386/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/netx.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/plugin.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/classes, sun.desktop=gnome, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.7.0_15-b20, hibernate.connection.autocommit=true, javax.persistence.jdbc.user=sa, user.name=frederic, guice.disable.misplaced.annotation.check=true, hibernate.connection.release_mode=auto, user.language=fr, sun.boot.library.path=/usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386, classworlds.conf=/opt/tools/java/tools/maven/3.0.5/bin/m2.conf, java.version=1.7.0_15, user.timezone=Europe/Paris, sun.arch.data.model=32, java.endorsed.dirs=/usr/lib/jvm/java-7-openjdk-i386/jre/lib/endorsed, sun.cpu.isalist=, sun.jnu.encoding=UTF-8, file.encoding.pkg=sun.io, file.separator=/, java.specification.name=Java Platform API Specification, java.class.version=51.0, user.country=FR, securerandom.source=file:/dev/./urandom, java.home=/usr/lib/jvm/java-7-openjdk-i386/jre, java.vm.info=mixed mode, os.version=3.2.0-39-generic-pae, hibernate.transaction.factory_class=org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory, hibernate.query.jpaql_strict_compliance=true, path.separator=:, java.vm.version=23.7-b01, javax.persistence.jdbc.url=jdbc:hsqldb:file:db/contacts, java.awt.printerjob=sun.print.PSPrinterJob, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.X11.XToolkit, hibernate.connection.username=sa, user.home=/home/frederic, java.specification.vendor=Oracle Corporation, hibernate.hbm2ddl.auto=update, java.library.path=/usr/java/packages/lib/i386:/usr/lib/jni:/lib:/usr/lib, java.vendor.url=http://java.oracle.com/, hibernate.connection.driver_class=org.hsqldb.jdbcDriver, java.vm.vendor=Oracle Corporation, maven.home=/opt/tools/java/tools/maven/3.0.5, java.runtime.name=OpenJDK Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher jetty:run, java.class.path=/opt/tools/java/tools/maven/3.0.5/boot/plexus-classworlds-2.4.jar, hibernate.bytecode.use_reflection_optimizer=false, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.7, sun.cpu.endian=little, javax.persistence.jdbc.driver=org.hsqldb.jdbcDriver, sun.os.patch.level=unknown, java.io.tmpdir=/tmp, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, os.arch=i386, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.ext.dirs=/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext:/usr/java/packages/lib/ext, javax.persistence.jdbc.password=, user.dir=/home/frederic/Dropbox/Projects/java/contacts, line.separator=
+, java.vm.name=OpenJDK Server VM, file.encoding=UTF-8, hibernate.use_identifier_rollback=false, java.specification.version=1.7, hibernate.show_sql=true}
+2803 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Setting dialect [org.hibernate.dialect.HSQLDialect]
+2805 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  - Static SQL for entity: com.capggemini.samples.applications.contacts.rest.persistence.model.Contact
+2806 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Version select: select contactId from Contact where contactId =?
+2806 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Snapshot select: select contact_.contactId, contact_.email as email2_, contact_.firstName as firstName2_, contact_.lastName as lastName2_ from Contact contact_ where contact_.contactId=?
+2807 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Insert 0: insert into Contact (email, firstName, lastName, contactId) values (?, ?, ?, ?)
+2807 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Update 0: update Contact set email=?, firstName=?, lastName=? where contactId=?
+2807 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Delete 0: delete from Contact where contactId=?
+2807 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Identity insert: insert into Contact (contactId, email, firstName, lastName) values (null, ?, ?, ?)
+2808 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [NONE]: select contact0_.contactId as contactId2_0_, contact0_.email as email2_0_, contact0_.firstName as firstName2_0_, contact0_.lastName as lastName2_0_ from Contact contact0_ where contact0_.contactId=?
+2808 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [READ]: select contact0_.contactId as contactId2_0_, contact0_.email as email2_0_, contact0_.firstName as firstName2_0_, contact0_.lastName as lastName2_0_ from Contact contact0_ where contact0_.contactId=?
+2808 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [UPGRADE]: select contact0_.contactId as contactId2_0_, contact0_.email as email2_0_, contact0_.firstName as firstName2_0_, contact0_.lastName as lastName2_0_ from Contact contact0_ where contact0_.contactId=?
+2808 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [UPGRADE_NOWAIT]: select contact0_.contactId as contactId2_0_, contact0_.email as email2_0_, contact0_.firstName as firstName2_0_, contact0_.lastName as lastName2_0_ from Contact contact0_ where contact0_.contactId=?
+2808 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [FORCE]: select contact0_.contactId as contactId2_0_, contact0_.email as email2_0_, contact0_.firstName as firstName2_0_, contact0_.lastName as lastName2_0_ from Contact contact0_ where contact0_.contactId=?
+2809 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [PESSIMISTIC_READ]: select contact0_.contactId as contactId2_0_, contact0_.email as email2_0_, contact0_.firstName as firstName2_0_, contact0_.lastName as lastName2_0_ from Contact contact0_ where contact0_.contactId=?
+2809 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [PESSIMISTIC_WRITE]: select contact0_.contactId as contactId2_0_, contact0_.email as email2_0_, contact0_.firstName as firstName2_0_, contact0_.lastName as lastName2_0_ from Contact contact0_ where contact0_.contactId=?
+2809 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [PESSIMISTIC_FORCE_INCREMENT]: select contact0_.contactId as contactId2_0_, contact0_.email as email2_0_, contact0_.firstName as firstName2_0_, contact0_.lastName as lastName2_0_ from Contact contact0_ where contact0_.contactId=?
+2809 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [OPTIMISTIC]: select contact0_.contactId as contactId2_0_, contact0_.email as email2_0_, contact0_.firstName as firstName2_0_, contact0_.lastName as lastName2_0_ from Contact contact0_ where contact0_.contactId=?
+2810 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [OPTIMISTIC_FORCE_INCREMENT]: select contact0_.contactId as contactId2_0_, contact0_.email as email2_0_, contact0_.firstName as firstName2_0_, contact0_.lastName as lastName2_0_ from Contact contact0_ where contact0_.contactId=?
+2810 [main] DEBUG org.hibernate.loader.Loader  - Static select for action ACTION_MERGE on entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact: select contact0_.contactId as contactId2_0_, contact0_.email as email2_0_, contact0_.firstName as firstName2_0_, contact0_.lastName as lastName2_0_ from Contact contact0_ where contact0_.contactId=?
+2810 [main] DEBUG org.hibernate.loader.Loader  - Static select for action ACTION_REFRESH on entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact: select contact0_.contactId as contactId2_0_, contact0_.email as email2_0_, contact0_.firstName as firstName2_0_, contact0_.lastName as lastName2_0_ from Contact contact0_ where contact0_.contactId=?
+2810 [main] DEBUG org.hibernate.internal.SessionFactoryRegistry  - Registering SessionFactory: 48dc73f1-27cb-4bad-a20d-db48b9dcd87e (<unnamed>)
+2810 [main] DEBUG org.hibernate.internal.SessionFactoryRegistry  - Not binding SessionFactory to JNDI, no JNDI name configured
+2810 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Instantiated session factory
+2810 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000228: Running hbm2ddl schema update
+2810 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000102: Fetching database metadata
+2811 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000396: Updating schema
+2811 [main] DEBUG org.hibernate.cfg.Configuration  - Processing hbm.xml files
+2812 [main] DEBUG org.hibernate.cfg.Configuration  - Process annotated classes
+2813 [main] DEBUG org.hibernate.cfg.Configuration  - Processing fk mappings (*ToOne and JoinedSubclass)
+2813 [main] DEBUG org.hibernate.cfg.Configuration  - Processing extends queue
+2814 [main] DEBUG org.hibernate.cfg.Configuration  - Processing extends queue
+2814 [main] DEBUG org.hibernate.cfg.Configuration  - Processing collection mappings
+2814 [main] DEBUG org.hibernate.cfg.Configuration  - Processing native query and ResultSetMapping mappings
+2814 [main] DEBUG org.hibernate.cfg.Configuration  - Processing association property references
+2814 [main] DEBUG org.hibernate.cfg.Configuration  - Processing foreign key constraints
+2844 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: PUBLIC.CONTACT
+2845 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [email, lastname, firstname, contactid]
+2846 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000108: Foreign keys: []
+2847 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000126: Indexes: [sys_idx_46]
+2847 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Setting dialect [org.hibernate.dialect.HSQLDialect]
+2847 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000232: Schema update complete
+2848 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Checking 0 named HQL queries
+2848 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Checking 0 named SQL queries
+2849 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator  - Statistics initialized [enabled=false]
+2851 [main] DEBUG org.hibernate.ejb.internal.EntityManagerFactoryRegistry  - Registering EntityManagerFactory: contacts 
+2852 [main] WARN  org.hibernate.ejb.internal.EntityManagerFactoryRegistry  - HHH000436: Entity manager factory name (contacts) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2853 [main] DEBUG org.hibernate.internal.SessionImpl  - Opened session at timestamp: 13654568615
+2854 [main] DEBUG com.capggemini.samples.applications.contacts.rest.application.Application  - Exiting Application.getSingletons()
+2855 [main] DEBUG com.capggemini.samples.applications.contacts.rest.application.Application  - Entering Application.getSingletons()
+2855 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration boolean -> org.hibernate.type.BooleanType@143153c
+2856 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration boolean -> org.hibernate.type.BooleanType@143153c
+2856 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@143153c
+2856 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@1e93446
+2857 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration true_false -> org.hibernate.type.TrueFalseType@674286
+2857 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration yes_no -> org.hibernate.type.YesNoType@2e77d4
+2857 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration byte -> org.hibernate.type.ByteType@10f0fbd
+2857 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration byte -> org.hibernate.type.ByteType@10f0fbd
+2858 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@10f0fbd
+2858 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration character -> org.hibernate.type.CharacterType@d1544a
+2858 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration char -> org.hibernate.type.CharacterType@d1544a
+2858 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@d1544a
+2859 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration short -> org.hibernate.type.ShortType@1920a91
+2859 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration short -> org.hibernate.type.ShortType@1920a91
+2859 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@1920a91
+2860 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration integer -> org.hibernate.type.IntegerType@199e94c
+2860 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration int -> org.hibernate.type.IntegerType@199e94c
+2860 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@199e94c
+2860 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration long -> org.hibernate.type.LongType@13692c8
+2861 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration long -> org.hibernate.type.LongType@13692c8
+2861 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Long -> org.hibernate.type.LongType@13692c8
+2862 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration float -> org.hibernate.type.FloatType@3cbf64
+2862 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration float -> org.hibernate.type.FloatType@3cbf64
+2862 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@3cbf64
+2865 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration double -> org.hibernate.type.DoubleType@1dddb91
+2866 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration double -> org.hibernate.type.DoubleType@1dddb91
+2867 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1dddb91
+2867 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@1b208de
+2867 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@1b208de
+2867 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@659aeb
+2867 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@659aeb
+2867 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration string -> org.hibernate.type.StringType@1d5cf30
+2867 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.String -> org.hibernate.type.StringType@1d5cf30
+2867 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration url -> org.hibernate.type.UrlType@21541f
+2868 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.net.URL -> org.hibernate.type.UrlType@21541f
+2868 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration date -> org.hibernate.type.DateType@b522aa
+2868 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Date -> org.hibernate.type.DateType@b522aa
+2868 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration time -> org.hibernate.type.TimeType@15d2bf6
+2868 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@15d2bf6
+2868 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration timestamp -> org.hibernate.type.TimestampType@123e236
+2868 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@123e236
+2868 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@123e236
+2868 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@b1307a
+2868 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration calendar -> org.hibernate.type.CalendarType@11b6813
+2869 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@11b6813
+2869 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@11b6813
+2869 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@1eafca5
+2869 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration locale -> org.hibernate.type.LocaleType@d22976
+2869 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@d22976
+2869 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration currency -> org.hibernate.type.CurrencyType@15212c7
+2869 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@15212c7
+2869 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration timezone -> org.hibernate.type.TimeZoneType@1921f18
+2869 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@1921f18
+2869 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration class -> org.hibernate.type.ClassType@109fa8b
+2870 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@109fa8b
+2870 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@15bc2a6
+2870 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@15bc2a6
+2870 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@18b745f
+2870 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@1fc7585
+2870 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration binary -> org.hibernate.type.BinaryType@50cabc
+2870 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration byte[] -> org.hibernate.type.BinaryType@50cabc
+2870 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [B -> org.hibernate.type.BinaryType@50cabc
+2870 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@1319b33
+2870 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@1319b33
+2871 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@1319b33
+2871 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration image -> org.hibernate.type.ImageType@1222039
+2871 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration characters -> org.hibernate.type.CharArrayType@a6e22f
+2872 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration char[] -> org.hibernate.type.CharArrayType@a6e22f
+2873 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [C -> org.hibernate.type.CharArrayType@a6e22f
+2874 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@234d3a
+2874 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@234d3a
+2874 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@234d3a
+2876 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration text -> org.hibernate.type.TextType@1ef3215
+2877 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration blob -> org.hibernate.type.BlobType@1585986
+2877 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@1585986
+2877 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@1e535ed
+2877 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration clob -> org.hibernate.type.ClobType@cb6e1d
+2877 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@cb6e1d
+2877 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@ece1b
+2877 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration serializable -> org.hibernate.type.SerializableType@918d7f
+2877 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration object -> org.hibernate.type.ObjectType@1a87817
+2877 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@1a87817
+2878 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@1181de1
+2878 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@51b2d4
+2878 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@1b38cdf
+2878 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@e5af67
+2878 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@15eac45
+2878 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@800269
+2878 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@1e5044
+2878 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@27d7d0
+2878 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2878 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2879 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2879 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2879 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [hilo] -> [org.hibernate.id.TableHiLoGenerator]
+2880 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2881 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2881 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2881 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.SequenceGenerator]
+2881 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2881 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2882 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2882 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2882 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2882 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2882 [main] DEBUG org.hibernate.ejb.Ejb3Configuration  - Look up for persistence unit: contacts
+2931 [main] DEBUG org.hibernate.ejb.Ejb3Configuration  - Detect class: true; detect hbm: true
+2932 [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Searching mapped entities in jar/par: file:/home/frederic/Dropbox/Projects/java/contacts/target/classes/
+2933 [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Filtering: com.capggemini.samples.applications.contacts.rest.persistence.model.Contact
+2942 [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Java element filter matched for com.capggemini.samples.applications.contacts.rest.persistence.model.Contact
+2943 [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Filtering: com.capggemini.samples.applications.contacts.rest.services.ContactService
+2945 [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Filtering: com.capggemini.samples.applications.contacts.rest.application.Application
+2948 [main] DEBUG org.hibernate.ejb.Ejb3Configuration  - Detect class: true; detect hbm: true
+2948 [main] DEBUG org.hibernate.ejb.Ejb3Configuration  - Creating Factory: contacts
+2949 [main] DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl  - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2953 [main] DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl  - Adding Integrator [org.hibernate.ejb.event.JpaIntegrator].
+2955 [main] DEBUG org.hibernate.ejb.util.NamingHelper  - No JNDI name configured for binding Ejb3Configuration
+2956 [main] DEBUG org.hibernate.cfg.Configuration  - Preparing to build session factory with filters : {}
+2957 [main] DEBUG org.hibernate.cfg.Configuration  - Processing hbm.xml files
+2957 [main] DEBUG org.hibernate.cfg.Configuration  - Process annotated classes
+2958 [main] DEBUG org.hibernate.cfg.AnnotationBinder  - Binding entity from annotated class: com.capggemini.samples.applications.contacts.rest.persistence.model.Contact
+2958 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2959 [main] DEBUG org.hibernate.cfg.AnnotationBinder  - No value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+2967 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder  - Import with entity name Contact
+2968 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder  - Bind entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact on table Contact
+2969 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Contact), mappingColumn=contactId, insertable=true, updatable=true, unique=false}
+2970 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - MetadataSourceProcessor property contactId with lazy=false
+2970 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - building SimpleValue for contactId
+2970 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property contactId
+2971 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Contact), mappingColumn=email, insertable=true, updatable=true, unique=false}
+2972 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - MetadataSourceProcessor property email with lazy=false
+2972 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - building SimpleValue for email
+2972 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property email
+2972 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Contact), mappingColumn=firstName, insertable=true, updatable=true, unique=false}
+2972 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - MetadataSourceProcessor property firstName with lazy=false
+2972 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - building SimpleValue for firstName
+2972 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property firstName
+2973 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Contact), mappingColumn=lastName, insertable=true, updatable=true, unique=false}
+2973 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - MetadataSourceProcessor property lastName with lazy=false
+2973 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - building SimpleValue for lastName
+2974 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property lastName
+2974 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - Setting SimpleValue typeName for contactId
+2974 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - Setting SimpleValue typeName for email
+2974 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - Setting SimpleValue typeName for firstName
+2974 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - Setting SimpleValue typeName for lastName
+2974 [main] DEBUG org.hibernate.cfg.Configuration  - Processing fk mappings (*ToOne and JoinedSubclass)
+2974 [main] DEBUG org.hibernate.cfg.Configuration  - Processing extends queue
+2974 [main] DEBUG org.hibernate.cfg.Configuration  - Processing extends queue
+2974 [main] DEBUG org.hibernate.cfg.Configuration  - Processing collection mappings
+2974 [main] DEBUG org.hibernate.cfg.Configuration  - Processing native query and ResultSetMapping mappings
+2975 [main] DEBUG org.hibernate.cfg.Configuration  - Processing association property references
+2975 [main] DEBUG org.hibernate.cfg.Configuration  - Processing foreign key constraints
+2975 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2976 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+2976 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: true
+2977 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [org.hsqldb.jdbcDriver] at URL [jdbc:hsqldb:file:db/contacts]
+2977 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=sa, autocommit=true, release_mode=auto}
+2979 [main] DEBUG org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - Opening new JDBC connection
+2979 [main] DEBUG org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - Created connection to: jdbc:hsqldb:file:db/contacts, Isolation Level: 2
+2980 [main] DEBUG org.hibernate.engine.jdbc.internal.JdbcServicesImpl  - Database ->
+       name : HSQL Database Engine
+    version : 1.8.0
+      major : 1
+      minor : 8
+2980 [main] DEBUG org.hibernate.engine.jdbc.internal.JdbcServicesImpl  - Driver ->
+       name : HSQL Database Engine Driver
+    version : 1.8.0
+      major : 1
+      minor : 8
+2981 [main] DEBUG org.hibernate.engine.jdbc.internal.JdbcServicesImpl  - JDBC version : 3.0
+2982 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2983 [main] INFO  org.hibernate.engine.jdbc.internal.LobCreatorBuilder  - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+3049 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Automatic flush during beforeCompletion(): disabled
+3049 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Automatic session close at end of transaction: disabled
+3049 [main] DEBUG org.hibernate.cfg.SettingsFactory  - JDBC batch size: 15
+3049 [main] DEBUG org.hibernate.cfg.SettingsFactory  - JDBC batch updates for versioned data: disabled
+3049 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Scrollable result sets: enabled
+3049 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Wrap result sets: disabled
+3049 [main] DEBUG org.hibernate.cfg.SettingsFactory  - JDBC3 getGeneratedKeys(): disabled
+3049 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Connection release mode: auto
+3049 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+3050 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Default batch fetch size: 1
+3050 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Generate SQL with comments: disabled
+3050 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Order SQL updates by primary key: disabled
+3050 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Order SQL inserts for batching: disabled
+3050 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Query translator: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory
+3050 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+3050 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Query language substitutions: {}
+3050 [main] DEBUG org.hibernate.cfg.SettingsFactory  - JPA-QL strict compliance: enabled
+3050 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Second-level cache: enabled
+3050 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Query cache: disabled
+3050 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+3051 [main] DEBUG org.hibernate.cfg.SettingsFactory  - org.hibernate.cache.internal.NoCachingRegionFactory did not provide constructor accepting java.util.Properties; attempting no-arg constructor.
+3051 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Optimize cache for minimal puts: disabled
+3051 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Structured second-level cache entries: disabled
+3051 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Statistics: disabled
+3051 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Deleted entity synthetic identifier rollback: disabled
+3051 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Default entity-mode: pojo
+3051 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Named query checking : enabled
+3051 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+3051 [main] DEBUG org.hibernate.cfg.SettingsFactory  - multi-tenancy strategy : NONE
+3051 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Building session factory
+3052 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Session factory constructed with filter configurations : {}
+3052 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Instantiating session factory with properties: {java.vendor=Oracle Corporation, sun.java.launcher=SUN_STANDARD, hibernate.connection.url=jdbc:hsqldb:file:db/contacts, sun.management.compiler=HotSpot Tiered Compilers, hibernate.ejb.discard_pc_on_close=false, hibernate.transaction.flush_before_completion=false, os.name=Linux, sun.boot.class.path=/usr/lib/jvm/java-7-openjdk-i386/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/netx.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/plugin.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/classes, sun.desktop=gnome, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.7.0_15-b20, hibernate.connection.autocommit=true, javax.persistence.jdbc.user=sa, user.name=frederic, guice.disable.misplaced.annotation.check=true, hibernate.connection.release_mode=auto, user.language=fr, sun.boot.library.path=/usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386, classworlds.conf=/opt/tools/java/tools/maven/3.0.5/bin/m2.conf, java.version=1.7.0_15, user.timezone=Europe/Paris, sun.arch.data.model=32, java.endorsed.dirs=/usr/lib/jvm/java-7-openjdk-i386/jre/lib/endorsed, sun.cpu.isalist=, sun.jnu.encoding=UTF-8, file.encoding.pkg=sun.io, file.separator=/, java.specification.name=Java Platform API Specification, java.class.version=51.0, user.country=FR, securerandom.source=file:/dev/./urandom, java.home=/usr/lib/jvm/java-7-openjdk-i386/jre, java.vm.info=mixed mode, os.version=3.2.0-39-generic-pae, hibernate.transaction.factory_class=org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory, hibernate.query.jpaql_strict_compliance=true, path.separator=:, java.vm.version=23.7-b01, javax.persistence.jdbc.url=jdbc:hsqldb:file:db/contacts, java.awt.printerjob=sun.print.PSPrinterJob, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.X11.XToolkit, hibernate.connection.username=sa, user.home=/home/frederic, java.specification.vendor=Oracle Corporation, hibernate.hbm2ddl.auto=update, java.library.path=/usr/java/packages/lib/i386:/usr/lib/jni:/lib:/usr/lib, java.vendor.url=http://java.oracle.com/, hibernate.connection.driver_class=org.hsqldb.jdbcDriver, java.vm.vendor=Oracle Corporation, maven.home=/opt/tools/java/tools/maven/3.0.5, java.runtime.name=OpenJDK Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher jetty:run, java.class.path=/opt/tools/java/tools/maven/3.0.5/boot/plexus-classworlds-2.4.jar, hibernate.bytecode.use_reflection_optimizer=false, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.7, sun.cpu.endian=little, javax.persistence.jdbc.driver=org.hsqldb.jdbcDriver, sun.os.patch.level=unknown, java.io.tmpdir=/tmp, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, os.arch=i386, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.ext.dirs=/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext:/usr/java/packages/lib/ext, javax.persistence.jdbc.password=, user.dir=/home/frederic/Dropbox/Projects/java/contacts, line.separator=
+, java.vm.name=OpenJDK Server VM, file.encoding=UTF-8, hibernate.use_identifier_rollback=false, java.specification.version=1.7, hibernate.show_sql=true}
+3054 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Setting dialect [org.hibernate.dialect.HSQLDialect]
+3068 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  - Static SQL for entity: com.capggemini.samples.applications.contacts.rest.persistence.model.Contact
+3070 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Version select: select contactId from Contact where contactId =?
+3071 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Snapshot select: select contact_.contactId, contact_.email as email4_, contact_.firstName as firstName4_, contact_.lastName as lastName4_ from Contact contact_ where contact_.contactId=?
+3072 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Insert 0: insert into Contact (email, firstName, lastName, contactId) values (?, ?, ?, ?)
+3073 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Update 0: update Contact set email=?, firstName=?, lastName=? where contactId=?
+3074 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Delete 0: delete from Contact where contactId=?
+3077 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Identity insert: insert into Contact (contactId, email, firstName, lastName) values (null, ?, ?, ?)
+3079 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [NONE]: select contact0_.contactId as contactId4_0_, contact0_.email as email4_0_, contact0_.firstName as firstName4_0_, contact0_.lastName as lastName4_0_ from Contact contact0_ where contact0_.contactId=?
+3083 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [READ]: select contact0_.contactId as contactId4_0_, contact0_.email as email4_0_, contact0_.firstName as firstName4_0_, contact0_.lastName as lastName4_0_ from Contact contact0_ where contact0_.contactId=?
+3085 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [UPGRADE]: select contact0_.contactId as contactId4_0_, contact0_.email as email4_0_, contact0_.firstName as firstName4_0_, contact0_.lastName as lastName4_0_ from Contact contact0_ where contact0_.contactId=?
+3086 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [UPGRADE_NOWAIT]: select contact0_.contactId as contactId4_0_, contact0_.email as email4_0_, contact0_.firstName as firstName4_0_, contact0_.lastName as lastName4_0_ from Contact contact0_ where contact0_.contactId=?
+3088 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [FORCE]: select contact0_.contactId as contactId4_0_, contact0_.email as email4_0_, contact0_.firstName as firstName4_0_, contact0_.lastName as lastName4_0_ from Contact contact0_ where contact0_.contactId=?
+3090 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [PESSIMISTIC_READ]: select contact0_.contactId as contactId4_0_, contact0_.email as email4_0_, contact0_.firstName as firstName4_0_, contact0_.lastName as lastName4_0_ from Contact contact0_ where contact0_.contactId=?
+3097 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [PESSIMISTIC_WRITE]: select contact0_.contactId as contactId4_0_, contact0_.email as email4_0_, contact0_.firstName as firstName4_0_, contact0_.lastName as lastName4_0_ from Contact contact0_ where contact0_.contactId=?
+3098 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [PESSIMISTIC_FORCE_INCREMENT]: select contact0_.contactId as contactId4_0_, contact0_.email as email4_0_, contact0_.firstName as firstName4_0_, contact0_.lastName as lastName4_0_ from Contact contact0_ where contact0_.contactId=?
+3098 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [OPTIMISTIC]: select contact0_.contactId as contactId4_0_, contact0_.email as email4_0_, contact0_.firstName as firstName4_0_, contact0_.lastName as lastName4_0_ from Contact contact0_ where contact0_.contactId=?
+3099 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [OPTIMISTIC_FORCE_INCREMENT]: select contact0_.contactId as contactId4_0_, contact0_.email as email4_0_, contact0_.firstName as firstName4_0_, contact0_.lastName as lastName4_0_ from Contact contact0_ where contact0_.contactId=?
+3100 [main] DEBUG org.hibernate.loader.Loader  - Static select for action ACTION_MERGE on entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact: select contact0_.contactId as contactId4_0_, contact0_.email as email4_0_, contact0_.firstName as firstName4_0_, contact0_.lastName as lastName4_0_ from Contact contact0_ where contact0_.contactId=?
+3101 [main] DEBUG org.hibernate.loader.Loader  - Static select for action ACTION_REFRESH on entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact: select contact0_.contactId as contactId4_0_, contact0_.email as email4_0_, contact0_.firstName as firstName4_0_, contact0_.lastName as lastName4_0_ from Contact contact0_ where contact0_.contactId=?
+3102 [main] DEBUG org.hibernate.internal.SessionFactoryRegistry  - Registering SessionFactory: 37bece44-6d11-429e-8182-2d5aca44385d (<unnamed>)
+3103 [main] DEBUG org.hibernate.internal.SessionFactoryRegistry  - Not binding SessionFactory to JNDI, no JNDI name configured
+3104 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Instantiated session factory
+3104 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000228: Running hbm2ddl schema update
+3105 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000102: Fetching database metadata
+3106 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000396: Updating schema
+3107 [main] DEBUG org.hibernate.cfg.Configuration  - Processing hbm.xml files
+3107 [main] DEBUG org.hibernate.cfg.Configuration  - Process annotated classes
+3107 [main] DEBUG org.hibernate.cfg.Configuration  - Processing fk mappings (*ToOne and JoinedSubclass)
+3107 [main] DEBUG org.hibernate.cfg.Configuration  - Processing extends queue
+3107 [main] DEBUG org.hibernate.cfg.Configuration  - Processing extends queue
+3107 [main] DEBUG org.hibernate.cfg.Configuration  - Processing collection mappings
+3107 [main] DEBUG org.hibernate.cfg.Configuration  - Processing native query and ResultSetMapping mappings
+3108 [main] DEBUG org.hibernate.cfg.Configuration  - Processing association property references
+3108 [main] DEBUG org.hibernate.cfg.Configuration  - Processing foreign key constraints
+3124 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: PUBLIC.CONTACT
+3125 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [email, lastname, firstname, contactid]
+3126 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000108: Foreign keys: []
+3127 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000126: Indexes: [sys_idx_46]
+3128 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Setting dialect [org.hibernate.dialect.HSQLDialect]
+3129 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000232: Schema update complete
+3129 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Checking 0 named HQL queries
+3130 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Checking 0 named SQL queries
+3131 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator  - Statistics initialized [enabled=false]
+3133 [main] DEBUG org.hibernate.ejb.internal.EntityManagerFactoryRegistry  - Registering EntityManagerFactory: contacts 
+3134 [main] WARN  org.hibernate.ejb.internal.EntityManagerFactoryRegistry  - HHH000436: Entity manager factory name (contacts) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+3134 [main] DEBUG org.hibernate.internal.SessionImpl  - Opened session at timestamp: 13654568617
+3135 [main] DEBUG com.capggemini.samples.applications.contacts.rest.application.Application  - Exiting Application.getSingletons()
+3136 [main] DEBUG com.capggemini.samples.applications.contacts.rest.application.Application  - Entering Application.getSingletons()
+3136 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration boolean -> org.hibernate.type.BooleanType@143153c
+3137 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration boolean -> org.hibernate.type.BooleanType@143153c
+3138 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@143153c
+3139 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@1e93446
+3139 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration true_false -> org.hibernate.type.TrueFalseType@674286
+3140 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration yes_no -> org.hibernate.type.YesNoType@2e77d4
+3141 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration byte -> org.hibernate.type.ByteType@10f0fbd
+3142 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration byte -> org.hibernate.type.ByteType@10f0fbd
+3142 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@10f0fbd
+3143 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration character -> org.hibernate.type.CharacterType@d1544a
+3144 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration char -> org.hibernate.type.CharacterType@d1544a
+3144 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@d1544a
+3145 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration short -> org.hibernate.type.ShortType@1920a91
+3145 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration short -> org.hibernate.type.ShortType@1920a91
+3145 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@1920a91
+3145 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration integer -> org.hibernate.type.IntegerType@199e94c
+3145 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration int -> org.hibernate.type.IntegerType@199e94c
+3145 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@199e94c
+3145 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration long -> org.hibernate.type.LongType@13692c8
+3145 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration long -> org.hibernate.type.LongType@13692c8
+3145 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Long -> org.hibernate.type.LongType@13692c8
+3145 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration float -> org.hibernate.type.FloatType@3cbf64
+3145 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration float -> org.hibernate.type.FloatType@3cbf64
+3146 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@3cbf64
+3146 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration double -> org.hibernate.type.DoubleType@1dddb91
+3146 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration double -> org.hibernate.type.DoubleType@1dddb91
+3146 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1dddb91
+3146 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@1b208de
+3146 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@1b208de
+3146 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@659aeb
+3146 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@659aeb
+3146 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration string -> org.hibernate.type.StringType@1d5cf30
+3146 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.String -> org.hibernate.type.StringType@1d5cf30
+3146 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration url -> org.hibernate.type.UrlType@21541f
+3147 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.net.URL -> org.hibernate.type.UrlType@21541f
+3147 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration date -> org.hibernate.type.DateType@b522aa
+3147 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Date -> org.hibernate.type.DateType@b522aa
+3148 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration time -> org.hibernate.type.TimeType@15d2bf6
+3149 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@15d2bf6
+3149 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration timestamp -> org.hibernate.type.TimestampType@123e236
+3150 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@123e236
+3151 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@123e236
+3151 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@b1307a
+3152 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration calendar -> org.hibernate.type.CalendarType@11b6813
+3153 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@11b6813
+3154 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@11b6813
+3154 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@1eafca5
+3155 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration locale -> org.hibernate.type.LocaleType@d22976
+3156 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@d22976
+3157 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration currency -> org.hibernate.type.CurrencyType@15212c7
+3157 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@15212c7
+3158 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration timezone -> org.hibernate.type.TimeZoneType@1921f18
+3159 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@1921f18
+3159 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration class -> org.hibernate.type.ClassType@109fa8b
+3159 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@109fa8b
+3159 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@15bc2a6
+3160 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@15bc2a6
+3161 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@18b745f
+3161 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@1fc7585
+3161 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration binary -> org.hibernate.type.BinaryType@50cabc
+3161 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration byte[] -> org.hibernate.type.BinaryType@50cabc
+3161 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [B -> org.hibernate.type.BinaryType@50cabc
+3161 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@1319b33
+3167 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@1319b33
+3167 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@1319b33
+3168 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration image -> org.hibernate.type.ImageType@1222039
+3169 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration characters -> org.hibernate.type.CharArrayType@a6e22f
+3169 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration char[] -> org.hibernate.type.CharArrayType@a6e22f
+3170 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [C -> org.hibernate.type.CharArrayType@a6e22f
+3171 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@234d3a
+3171 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@234d3a
+3172 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@234d3a
+3173 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration text -> org.hibernate.type.TextType@1ef3215
+3173 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration blob -> org.hibernate.type.BlobType@1585986
+3174 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@1585986
+3175 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@1e535ed
+3175 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration clob -> org.hibernate.type.ClobType@cb6e1d
+3176 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@cb6e1d
+3176 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@ece1b
+3177 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration serializable -> org.hibernate.type.SerializableType@918d7f
+3177 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration object -> org.hibernate.type.ObjectType@1a87817
+3178 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@1a87817
+3178 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@1b5bb24
+3178 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@1179fc
+3179 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@15fcaec
+3179 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@36026
+3180 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@19d5fd2
+3180 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@fdea5c
+3180 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@2573dd
+3181 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@d9eec4
+3181 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+3182 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+3183 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+3183 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+3184 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [hilo] -> [org.hibernate.id.TableHiLoGenerator]
+3184 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+3185 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+3185 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+3185 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.SequenceGenerator]
+3185 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+3185 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+3185 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+3185 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+3185 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+3186 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+3186 [main] DEBUG org.hibernate.ejb.Ejb3Configuration  - Look up for persistence unit: contacts
+3209 [main] DEBUG org.hibernate.ejb.Ejb3Configuration  - Detect class: true; detect hbm: true
+3210 [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Searching mapped entities in jar/par: file:/home/frederic/Dropbox/Projects/java/contacts/target/classes/
+3212 [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Filtering: com.capggemini.samples.applications.contacts.rest.persistence.model.Contact
+3213 [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Java element filter matched for com.capggemini.samples.applications.contacts.rest.persistence.model.Contact
+3214 [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Filtering: com.capggemini.samples.applications.contacts.rest.services.ContactService
+3216 [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Filtering: com.capggemini.samples.applications.contacts.rest.application.Application
+3217 [main] DEBUG org.hibernate.ejb.Ejb3Configuration  - Detect class: true; detect hbm: true
+3218 [main] DEBUG org.hibernate.ejb.Ejb3Configuration  - Creating Factory: contacts
+3219 [main] DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl  - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+3220 [main] DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl  - Adding Integrator [org.hibernate.ejb.event.JpaIntegrator].
+3222 [main] DEBUG org.hibernate.ejb.util.NamingHelper  - No JNDI name configured for binding Ejb3Configuration
+3223 [main] DEBUG org.hibernate.cfg.Configuration  - Preparing to build session factory with filters : {}
+3224 [main] DEBUG org.hibernate.cfg.Configuration  - Processing hbm.xml files
+3224 [main] DEBUG org.hibernate.cfg.Configuration  - Process annotated classes
+3225 [main] DEBUG org.hibernate.cfg.AnnotationBinder  - Binding entity from annotated class: com.capggemini.samples.applications.contacts.rest.persistence.model.Contact
+3227 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+3227 [main] DEBUG org.hibernate.cfg.AnnotationBinder  - No value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+3227 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder  - Import with entity name Contact
+3227 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder  - Bind entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact on table Contact
+3228 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Contact), mappingColumn=contactId, insertable=true, updatable=true, unique=false}
+3229 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - MetadataSourceProcessor property contactId with lazy=false
+3229 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - building SimpleValue for contactId
+3229 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property contactId
+3229 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Contact), mappingColumn=email, insertable=true, updatable=true, unique=false}
+3229 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - MetadataSourceProcessor property email with lazy=false
+3229 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - building SimpleValue for email
+3229 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property email
+3230 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Contact), mappingColumn=firstName, insertable=true, updatable=true, unique=false}
+3230 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - MetadataSourceProcessor property firstName with lazy=false
+3230 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - building SimpleValue for firstName
+3230 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property firstName
+3230 [main] DEBUG org.hibernate.cfg.Ejb3Column  - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Contact), mappingColumn=lastName, insertable=true, updatable=true, unique=false}
+3230 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - MetadataSourceProcessor property lastName with lazy=false
+3230 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - building SimpleValue for lastName
+3230 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder  - Building property lastName
+3231 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - Setting SimpleValue typeName for contactId
+3231 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - Setting SimpleValue typeName for email
+3231 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - Setting SimpleValue typeName for firstName
+3231 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder  - Setting SimpleValue typeName for lastName
+3231 [main] DEBUG org.hibernate.cfg.Configuration  - Processing fk mappings (*ToOne and JoinedSubclass)
+3231 [main] DEBUG org.hibernate.cfg.Configuration  - Processing extends queue
+3231 [main] DEBUG org.hibernate.cfg.Configuration  - Processing extends queue
+3231 [main] DEBUG org.hibernate.cfg.Configuration  - Processing collection mappings
+3231 [main] DEBUG org.hibernate.cfg.Configuration  - Processing native query and ResultSetMapping mappings
+3231 [main] DEBUG org.hibernate.cfg.Configuration  - Processing association property references
+3231 [main] DEBUG org.hibernate.cfg.Configuration  - Processing foreign key constraints
+3232 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+3232 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20
+3232 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: true
+3232 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [org.hsqldb.jdbcDriver] at URL [jdbc:hsqldb:file:db/contacts]
+3235 [main] INFO  org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=sa, autocommit=true, release_mode=auto}
+3235 [main] DEBUG org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - Opening new JDBC connection
+3236 [main] DEBUG org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - Created connection to: jdbc:hsqldb:file:db/contacts, Isolation Level: 2
+3236 [main] DEBUG org.hibernate.engine.jdbc.internal.JdbcServicesImpl  - Database ->
+       name : HSQL Database Engine
+    version : 1.8.0
+      major : 1
+      minor : 8
+3236 [main] DEBUG org.hibernate.engine.jdbc.internal.JdbcServicesImpl  - Driver ->
+       name : HSQL Database Engine Driver
+    version : 1.8.0
+      major : 1
+      minor : 8
+3236 [main] DEBUG org.hibernate.engine.jdbc.internal.JdbcServicesImpl  - JDBC version : 3.0
+3237 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+3238 [main] INFO  org.hibernate.engine.jdbc.internal.LobCreatorBuilder  - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+3238 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Automatic flush during beforeCompletion(): disabled
+3238 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Automatic session close at end of transaction: disabled
+3238 [main] DEBUG org.hibernate.cfg.SettingsFactory  - JDBC batch size: 15
+3238 [main] DEBUG org.hibernate.cfg.SettingsFactory  - JDBC batch updates for versioned data: disabled
+3238 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Scrollable result sets: enabled
+3238 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Wrap result sets: disabled
+3239 [main] DEBUG org.hibernate.cfg.SettingsFactory  - JDBC3 getGeneratedKeys(): disabled
+3239 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Connection release mode: auto
+3239 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+3239 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Default batch fetch size: 1
+3239 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Generate SQL with comments: disabled
+3239 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Order SQL updates by primary key: disabled
+3239 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Order SQL inserts for batching: disabled
+3239 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Query translator: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory
+3240 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+3240 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Query language substitutions: {}
+3240 [main] DEBUG org.hibernate.cfg.SettingsFactory  - JPA-QL strict compliance: enabled
+3240 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Second-level cache: enabled
+3240 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Query cache: disabled
+3240 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+3240 [main] DEBUG org.hibernate.cfg.SettingsFactory  - org.hibernate.cache.internal.NoCachingRegionFactory did not provide constructor accepting java.util.Properties; attempting no-arg constructor.
+3240 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Optimize cache for minimal puts: disabled
+3240 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Structured second-level cache entries: disabled
+3241 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Statistics: disabled
+3241 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Deleted entity synthetic identifier rollback: disabled
+3241 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Default entity-mode: pojo
+3241 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Named query checking : enabled
+3241 [main] DEBUG org.hibernate.cfg.SettingsFactory  - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+3241 [main] DEBUG org.hibernate.cfg.SettingsFactory  - multi-tenancy strategy : NONE
+3241 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Building session factory
+3242 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Session factory constructed with filter configurations : {}
+3242 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Instantiating session factory with properties: {java.vendor=Oracle Corporation, sun.java.launcher=SUN_STANDARD, hibernate.connection.url=jdbc:hsqldb:file:db/contacts, sun.management.compiler=HotSpot Tiered Compilers, hibernate.ejb.discard_pc_on_close=false, hibernate.transaction.flush_before_completion=false, os.name=Linux, sun.boot.class.path=/usr/lib/jvm/java-7-openjdk-i386/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/netx.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/plugin.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-i386/jre/classes, sun.desktop=gnome, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.7.0_15-b20, hibernate.connection.autocommit=true, javax.persistence.jdbc.user=sa, user.name=frederic, guice.disable.misplaced.annotation.check=true, hibernate.connection.release_mode=auto, user.language=fr, sun.boot.library.path=/usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386, classworlds.conf=/opt/tools/java/tools/maven/3.0.5/bin/m2.conf, java.version=1.7.0_15, user.timezone=Europe/Paris, sun.arch.data.model=32, java.endorsed.dirs=/usr/lib/jvm/java-7-openjdk-i386/jre/lib/endorsed, sun.cpu.isalist=, sun.jnu.encoding=UTF-8, file.encoding.pkg=sun.io, file.separator=/, java.specification.name=Java Platform API Specification, java.class.version=51.0, user.country=FR, securerandom.source=file:/dev/./urandom, java.home=/usr/lib/jvm/java-7-openjdk-i386/jre, java.vm.info=mixed mode, os.version=3.2.0-39-generic-pae, hibernate.transaction.factory_class=org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory, hibernate.query.jpaql_strict_compliance=true, path.separator=:, java.vm.version=23.7-b01, javax.persistence.jdbc.url=jdbc:hsqldb:file:db/contacts, java.awt.printerjob=sun.print.PSPrinterJob, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.X11.XToolkit, hibernate.connection.username=sa, user.home=/home/frederic, java.specification.vendor=Oracle Corporation, hibernate.hbm2ddl.auto=update, java.library.path=/usr/java/packages/lib/i386:/usr/lib/jni:/lib:/usr/lib, java.vendor.url=http://java.oracle.com/, hibernate.connection.driver_class=org.hsqldb.jdbcDriver, java.vm.vendor=Oracle Corporation, maven.home=/opt/tools/java/tools/maven/3.0.5, java.runtime.name=OpenJDK Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher jetty:run, java.class.path=/opt/tools/java/tools/maven/3.0.5/boot/plexus-classworlds-2.4.jar, hibernate.bytecode.use_reflection_optimizer=false, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.7, sun.cpu.endian=little, javax.persistence.jdbc.driver=org.hsqldb.jdbcDriver, sun.os.patch.level=unknown, java.io.tmpdir=/tmp, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, os.arch=i386, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.ext.dirs=/usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext:/usr/java/packages/lib/ext, javax.persistence.jdbc.password=, user.dir=/home/frederic/Dropbox/Projects/java/contacts, line.separator=
+, java.vm.name=OpenJDK Server VM, file.encoding=UTF-8, hibernate.use_identifier_rollback=false, java.specification.version=1.7, hibernate.show_sql=true}
+3244 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Setting dialect [org.hibernate.dialect.HSQLDialect]
+3246 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  - Static SQL for entity: com.capggemini.samples.applications.contacts.rest.persistence.model.Contact
+3247 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Version select: select contactId from Contact where contactId =?
+3248 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Snapshot select: select contact_.contactId, contact_.email as email6_, contact_.firstName as firstName6_, contact_.lastName as lastName6_ from Contact contact_ where contact_.contactId=?
+3249 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Insert 0: insert into Contact (email, firstName, lastName, contactId) values (?, ?, ?, ?)
+3250 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Update 0: update Contact set email=?, firstName=?, lastName=? where contactId=?
+3250 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Delete 0: delete from Contact where contactId=?
+3250 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister  -  Identity insert: insert into Contact (contactId, email, firstName, lastName) values (null, ?, ?, ?)
+3251 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [NONE]: select contact0_.contactId as contactId6_0_, contact0_.email as email6_0_, contact0_.firstName as firstName6_0_, contact0_.lastName as lastName6_0_ from Contact contact0_ where contact0_.contactId=?
+3251 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [READ]: select contact0_.contactId as contactId6_0_, contact0_.email as email6_0_, contact0_.firstName as firstName6_0_, contact0_.lastName as lastName6_0_ from Contact contact0_ where contact0_.contactId=?
+3252 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [UPGRADE]: select contact0_.contactId as contactId6_0_, contact0_.email as email6_0_, contact0_.firstName as firstName6_0_, contact0_.lastName as lastName6_0_ from Contact contact0_ where contact0_.contactId=?
+3252 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [UPGRADE_NOWAIT]: select contact0_.contactId as contactId6_0_, contact0_.email as email6_0_, contact0_.firstName as firstName6_0_, contact0_.lastName as lastName6_0_ from Contact contact0_ where contact0_.contactId=?
+3253 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [FORCE]: select contact0_.contactId as contactId6_0_, contact0_.email as email6_0_, contact0_.firstName as firstName6_0_, contact0_.lastName as lastName6_0_ from Contact contact0_ where contact0_.contactId=?
+3253 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [PESSIMISTIC_READ]: select contact0_.contactId as contactId6_0_, contact0_.email as email6_0_, contact0_.firstName as firstName6_0_, contact0_.lastName as lastName6_0_ from Contact contact0_ where contact0_.contactId=?
+3254 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [PESSIMISTIC_WRITE]: select contact0_.contactId as contactId6_0_, contact0_.email as email6_0_, contact0_.firstName as firstName6_0_, contact0_.lastName as lastName6_0_ from Contact contact0_ where contact0_.contactId=?
+3254 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [PESSIMISTIC_FORCE_INCREMENT]: select contact0_.contactId as contactId6_0_, contact0_.email as email6_0_, contact0_.firstName as firstName6_0_, contact0_.lastName as lastName6_0_ from Contact contact0_ where contact0_.contactId=?
+3258 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [OPTIMISTIC]: select contact0_.contactId as contactId6_0_, contact0_.email as email6_0_, contact0_.firstName as firstName6_0_, contact0_.lastName as lastName6_0_ from Contact contact0_ where contact0_.contactId=?
+3259 [main] DEBUG org.hibernate.loader.Loader  - Static select for entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact [OPTIMISTIC_FORCE_INCREMENT]: select contact0_.contactId as contactId6_0_, contact0_.email as email6_0_, contact0_.firstName as firstName6_0_, contact0_.lastName as lastName6_0_ from Contact contact0_ where contact0_.contactId=?
+3260 [main] DEBUG org.hibernate.loader.Loader  - Static select for action ACTION_MERGE on entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact: select contact0_.contactId as contactId6_0_, contact0_.email as email6_0_, contact0_.firstName as firstName6_0_, contact0_.lastName as lastName6_0_ from Contact contact0_ where contact0_.contactId=?
+3261 [main] DEBUG org.hibernate.loader.Loader  - Static select for action ACTION_REFRESH on entity com.capggemini.samples.applications.contacts.rest.persistence.model.Contact: select contact0_.contactId as contactId6_0_, contact0_.email as email6_0_, contact0_.firstName as firstName6_0_, contact0_.lastName as lastName6_0_ from Contact contact0_ where contact0_.contactId=?
+3261 [main] DEBUG org.hibernate.internal.SessionFactoryRegistry  - Registering SessionFactory: 80b47cbe-1a81-4d55-96f6-418347fda84a (<unnamed>)
+3262 [main] DEBUG org.hibernate.internal.SessionFactoryRegistry  - Not binding SessionFactory to JNDI, no JNDI name configured
+3263 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Instantiated session factory
+3263 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000228: Running hbm2ddl schema update
+3263 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000102: Fetching database metadata
+3263 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000396: Updating schema
+3263 [main] DEBUG org.hibernate.cfg.Configuration  - Processing hbm.xml files
+3263 [main] DEBUG org.hibernate.cfg.Configuration  - Process annotated classes
+3263 [main] DEBUG org.hibernate.cfg.Configuration  - Processing fk mappings (*ToOne and JoinedSubclass)
+3263 [main] DEBUG org.hibernate.cfg.Configuration  - Processing extends queue
+3263 [main] DEBUG org.hibernate.cfg.Configuration  - Processing extends queue
+3263 [main] DEBUG org.hibernate.cfg.Configuration  - Processing collection mappings
+3263 [main] DEBUG org.hibernate.cfg.Configuration  - Processing native query and ResultSetMapping mappings
+3263 [main] DEBUG org.hibernate.cfg.Configuration  - Processing association property references
+3263 [main] DEBUG org.hibernate.cfg.Configuration  - Processing foreign key constraints
+3295 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: PUBLIC.CONTACT
+3296 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [email, lastname, firstname, contactid]
+3297 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000108: Foreign keys: []
+3298 [main] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000126: Indexes: [sys_idx_46]
+3299 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Setting dialect [org.hibernate.dialect.HSQLDialect]
+3300 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate  - HHH000232: Schema update complete
+3300 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Checking 0 named HQL queries
+3301 [main] DEBUG org.hibernate.internal.SessionFactoryImpl  - Checking 0 named SQL queries
+3302 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator  - Statistics initialized [enabled=false]
+3304 [main] DEBUG org.hibernate.ejb.internal.EntityManagerFactoryRegistry  - Registering EntityManagerFactory: contacts 
+3305 [main] WARN  org.hibernate.ejb.internal.EntityManagerFactoryRegistry  - HHH000436: Entity manager factory name (contacts) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+3306 [main] DEBUG org.hibernate.internal.SessionImpl  - Opened session at timestamp: 13654568619
+3306 [main] DEBUG com.capggemini.samples.applications.contacts.rest.application.Application  - Exiting Application.getSingletons()
