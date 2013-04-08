@@ -13,9 +13,39 @@ public class Contact {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int contactId;
+	private String username;
 	private String firstName;
 	private String lastName;
 	private String email;
+
+	public Contact() {
+		super();
+	}
+
+	/**
+	 * default parameterized Constructor.
+	 * 
+	 * @param username
+	 * @param email
+	 * @param firstname
+	 * @param lastname
+	 */
+	public Contact(String username, String email, String firstname,
+			String lastname) {
+		this();
+		this.username = username;
+		this.email = email;
+		this.firstName = firstname;
+		this.lastName = lastname;
+	}
+
+	public String getUsername() {
+		return this.username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
 
 	public int getContactId() {
 		return contactId;
@@ -51,7 +81,9 @@ public class Contact {
 
 	@Override
 	public String toString() {
-		return "Contact [contactId=" + contactId + ", firstName=" + firstName
-				+ ", lastName=" + lastName + ", email=" + email + "]";
+		return String
+				.format("Contact[contactId:%d, username:%s, firstName:%s, lastName:%s, email:%s]",
+						this.contactId, this.username, this.firstName,
+						this.lastName, this.email);
 	}
 }

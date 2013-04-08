@@ -1,3 +1,12 @@
+<<<<<<< HEAD
 
 /target
 /.settings
+=======
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+>>>>>>> 600a09d1ff1a114e40ebdd1bf3bb593a0ba42b39

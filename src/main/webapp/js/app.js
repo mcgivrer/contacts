@@ -2,10 +2,11 @@
 
 var app = angular.module('app', []).config(
 		[ '$routeProvider', function($routeProvider) {
-			$routeProvider.when('/home', {
+			$routeProvider
+			.when('/home', {
 				templateUrl : 'partials/home.html',
-				controller : 'homeCtrl'
-			}).when('/contacts', {
+				controller : 'homeCtrl'})
+			.when('/contacts', {
 				templateUrl : 'partials/contact-list.html',
 				controller : 'listContactCtrl'
 			})

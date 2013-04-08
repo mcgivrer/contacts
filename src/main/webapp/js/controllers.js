@@ -6,11 +6,11 @@
  * @param $scope
  * @param $http
  */
-app.controller('listContactCtrl', function listCountryCtrl($scope, $http) {
+app.controller('listContactCtrl', function listContactCtrl($scope, $http) {
 	$scope.predicate = 'iso';
 	$scope.reverse = 'false';
-	$scope.country = {};
-	$http.get('rest/contacts').success(function(data) {
-		$scope.contacts = data;
+	$scope.contacts = {};
+	$http.get('rest/contact').success(function(data) {
+		$scope.contacts = data['contact'];
 	});
 });

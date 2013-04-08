@@ -26,8 +26,8 @@
         <tbody>
             <tr ng-repeat="contact in contacts | filter:search | orderBy:predicate:reverse">
                 <td>{{contact.username}}</td>
-                <td>{{contact.firstname}}</td>
-                <td>{{contact.lastname}}</td>
+                <td>{{contact.firstName}}</td>
+                <td>{{contact.lastName}}</td>
                 <td>{{contact.email}}</td>
                 <td><a href="#/contact/edit/{{contact.id}}" class="icon-edit"></a></td>
             </tr>
