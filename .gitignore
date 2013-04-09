@@ -1,6 +1,7 @@
 /target
 /.settings
 /logs
+/db
 .project
 .classpath
 
