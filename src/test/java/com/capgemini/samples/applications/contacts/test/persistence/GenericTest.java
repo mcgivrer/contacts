@@ -3,9 +3,17 @@
  */
 package com.capgemini.samples.applications.contacts.test.persistence;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+
+import org.yaml.snakeyaml.Yaml;
+import org.yaml.snakeyaml.constructor.Constructor;
 
 /**
  * Default Generic Test class to initialize JPA engine.
@@ -13,17 +21,39 @@ import javax.persistence.Persistence;
  * @author fdelorme
  * 
  */
-public class GenericTest {
+public class GenericTest<T> {
 	protected static EntityManagerFactory emf;
 	protected static EntityManager em;
 
-	private void initialize() {
+	public GenericTest() {
 		emf = Persistence.createEntityManagerFactory("test-contacts");
 		em = emf.createEntityManager();
 	}
 
-	public void getInstance() {
-		this.initialize();
+	/**
+	 * Parse the *.yaml file <code>dataFile</code> to store contains described data of <code>className</code> type to the
+	 * persistence.
+	 * 
+	 * @param dataFile
+	 * @param className
+	 */
+	protected void loadTestData(String dataFile) {
+		List<T> objectList = new ArrayList<T>();
+		Yaml yaml = new Yaml(new Constructor(objectList.getClass()));
+		FileReader dataio;
+		try {
+			dataio = new FileReader(this.getClass().getResource("/").getPath()
+					+ dataFile);
+			objectList = (List) yaml.load(dataio);
+			for (Object object : objectList) {
+				em.persist(object);
+			}
+
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
 	}
 
 }
