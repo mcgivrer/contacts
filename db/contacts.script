@@ -1,13 +1,13 @@
 CREATE SCHEMA PUBLIC AUTHORIZATION DBA
-CREATE MEMORY TABLE CONTACT(CONTACTID INTEGER NOT NULL PRIMARY KEY,EMAIL VARCHAR(255),FIRSTNAME VARCHAR(255),LASTNAME VARCHAR(255))
+CREATE MEMORY TABLE CONTACT(CONTACTID INTEGER NOT NULL PRIMARY KEY,EMAIL VARCHAR(255),FIRSTNAME VARCHAR(255),LASTNAME VARCHAR(255),USERNAME VARCHAR(255))
 CREATE USER SA PASSWORD ""
 GRANT DBA TO SA
 SET WRITE_DELAY 10
 SET SCHEMA PUBLIC
-INSERT INTO CONTACT VALUES(1,'fdelorme','frederic.delorme@capgemini.com','Frédéric','Delorme')
-INSERT INTO CONTACT VALUES(2,'gscheibel','guillaume.scheibel@capgemini.com','Guillaume','Scheibel')
-INSERT INTO CONTACT VALUES(3,'akubler','arnaud.kuble@capgemini.com','Arnaud','Kubler')
-INSERT INTO CONTACT VALUES(4,'npatient','nicolas.patient@capgemini.com','Nicolas','Patient')
-INSERT INTO CONTACT VALUES(5,'rfrigui','rassil.friggi@capgemini.com','Rassil','Friggi')
-INSERT INTO CONTACT VALUES(6,'npatient','nicolas.patient@capgemini.com','Nicolas','Patient')
-INSERT INTO CONTACT VALUES(7,'jmuhr','jeremy.muhr@capgemini.com','Jérémy','Muhr')
+INSERT INTO CONTACT VALUES(1,'fdelorme','frederic.delorme@capgemini.com','Fr\u00e9d\u00e9ric',NULL)
+INSERT INTO CONTACT VALUES(2,'gscheibel','guillaume.scheibel@capgemini.com','Guillaume',NULL)
+INSERT INTO CONTACT VALUES(3,'akubler','arnaud.kuble@capgemini.com','Arnaud',NULL)
+INSERT INTO CONTACT VALUES(4,'npatient','nicolas.patient@capgemini.com','Nicolas',NULL)
+INSERT INTO CONTACT VALUES(5,'rfrigui','rassil.friggi@capgemini.com','Rassil',NULL)
+INSERT INTO CONTACT VALUES(6,'npatient','nicolas.patient@capgemini.com','Nicolas',NULL)
+INSERT INTO CONTACT VALUES(7,'jmuhr','jeremy.muhr@capgemini.com','J\u00e9r\u00e9my',NULL)

@@ -22,7 +22,9 @@
 			<includes>
 				<include>com.capggemini.samples.applications:contacts.rest.services</include>
 			</includes>
-
+			<excludes>
+				<exclude>readme.txt</exclude>
+			</excludes>
 			<unpack>false</unpack>
 		</dependencySet>
 

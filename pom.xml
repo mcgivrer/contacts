@@ -17,7 +17,7 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<env.dir>env/local</env.dir>
-		<web.xml>assemble/${env.dir}/web.xml</web.xml>
+		<web.xml>assemble/${env.dir}/web-inf/web.xml</web.xml>
 	</properties>
 
 	<repositories>
@@ -39,6 +39,15 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 			<id>local</id>
 			<properties>
 				<profile.env>local</profile.env>
+			</properties>
+			<build>
+
+			</build>
+		</profile>
+		<profile>
+			<id>dev</id>
+			<properties>
+				<profile.env>dev</profile.env>
 			</properties>
 			<build>
 
@@ -95,7 +104,6 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 			<artifactId>jaxb-api</artifactId>
 			<version>2.2.3</version>
 			<scope>provided</scope>
-
 		</dependency>
 		<dependency>
 			<groupId>javax.annotation</groupId>
@@ -141,7 +149,7 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 			<artifactId>snakeyaml</artifactId>
 			<version>1.8</version>
 		</dependency>
-
+		
 	</dependencies>
 	<build>
 		<finalName>contacts</finalName>
@@ -229,6 +237,12 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 							<!-- enable filtering -->
 							<filtering>true</filtering>
 						</resource>
+						<resource>
+							<directory>assemble/${env.dir}/web-inf</directory>
+							<targetPath>WEB-INF/</targetPath>
+							<!-- enable filtering -->
+							<filtering>true</filtering>
+						</resource>
 					</webResources>
 					<webXml>${web.xml}</webXml>
 				</configuration>
@@ -255,6 +269,36 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 				</executions>
 			</plugin>
 
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>keytool-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>generate-resources</phase>
+						<id>clean</id>
+						<goals>
+							<goal>clean</goal>
+						</goals>
+					</execution>
+					<execution>
+						<phase>generate-resources</phase>
+						<id>genkey</id>
+						<goals>
+							<goal>genkey</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<keystore>${project.build.directory}/jetty-ssl.keystore</keystore>
+					<dname>cn=www.mcgivrer.fr</dname>
+					<keypass>jetty6</keypass>
+					<storepass>jetty6</storepass>
+					<alias>jetty6</alias>
+					<keyalg>RSA</keyalg>
+				</configuration>
+			</plugin>
+
 			<plugin>
 				<groupId>org.mortbay.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
@@ -265,6 +309,44 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 						<contextPath>/contacts</contextPath>
 					</webAppConfig>
 
+					<scanTargets>
+						<scanTarget>src/main/webapp</scanTarget>
+						<scanTarget>src/main/resources/realm.properties</scanTarget>
+						<scanTarget>src/main/java</scanTarget>
+					</scanTargets>
+
+					<!-- Security Realm temporary created users 
+					     from users.properties file -->
+					<userRealms>
+						<userRealm implementation="org.mortbay.jetty.security.HashUserRealm">
+							<name>MyRealm</name>
+							<config>${project.build.directory}/classes/users.properties</config>
+						</userRealm>
+					</userRealms>
+
+					<!-- Activate SSL -->
+
+					<connectors>
+						<connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
+							<port>8080</port>
+							<maxIdleTime>60000</maxIdleTime>
+						</connector>
+						<connector implementation="org.eclipse.jetty.server.ssl.SslSocketConnector">
+							<port>8443</port>
+							<maxIdleTime>60000</maxIdleTime>
+							<keystore>${project.build.directory}/jetty-ssl.keystore</keystore>
+							<password>jetty6</password>
+							<keyPassword>jetty6</keyPassword>
+						</connector>
+					</connectors>
+					
+					<!-- Login service to provide login capabilities on jetty -->
+					<loginServices>
+						<loginService implementation="org.eclipse.jetty.security.HashLoginService">
+							<name>MyRealm</name>
+							<config>${project.build.directory}/classes/users.properties</config>
+						</loginService>
+					</loginServices>
 					<connectors>
 						<connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
 							<port>9000</port>
@@ -279,6 +361,7 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 						<extended>true</extended>
 						<logTimeZone>GMT</logTimeZone>
 					</requestLog>
+
 				</configuration>
 			</plugin>
 
