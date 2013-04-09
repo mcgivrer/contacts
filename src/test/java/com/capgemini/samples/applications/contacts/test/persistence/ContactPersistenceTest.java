@@ -28,7 +28,7 @@ public class ContactPersistenceTest extends GenericEntityTest<Contact> {
 	}
 	@Test
 	public void loadContactTest() {
-		loadTestData("data/contact.yaml");
+		loadTestData("data/contact.yaml", Contact.class);
 	}
 
 

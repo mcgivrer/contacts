@@ -1,8 +1,15 @@
-- userame: fdelorme
+- 
+  userame: fdelorme
   lastName: Delorme
   firstName: Frédéric
   email: frederic.delorme@capgemini.com
-- username: gscheibel
+- 
+  username: gscheibel
   lastName: Scheibel
   firstName: Guillaume
   email: guillaume.scheibel@capgemini.com
+- 
+  username: jmuhr
+  lastName: Muhr
+  firstName: Jérémy
+  email: jeremy.muhr@capgemini.com

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false">
+
+	<!-- Les Appenders -->
+	<appender name="fileServer" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="${jboss.server.home.dir}/log/server-${project.name}.log" />
+		<param name="Append" value="true" />
+		
+		<!-- keep logs of the last seven days and delete older ones 
+		<param name="MaxBackupIndex" value="7"/>
+        -->
+        
+		<!-- Rollover at midnight each day -->
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+
+		<!-- Rollover at the top of each hour <param name="DatePattern" value="'.'yyyy-MM-dd-HH"/> -->
+		<layout class="org.apache.log4j.PatternLayout">
+			<!-- The default pattern: Date Priority [Category] Message\n -->
+			<param name="ConversionPattern" value="%d %-5p [%c] %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="console" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+			<!-- The default pattern: Date Priority [Category] Message\n -->
+			<param name="ConversionPattern" value="%d{ABSOLUTE} %-5p [%c{1}] %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="fileApp" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="${jboss.server.home.dir}/log/${project.name}.log" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		
+		<!-- keep logs of the last seven days and delete older ones 
+		<param name="MaxBackupIndex" value="7"/>
+		-->
+        
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d %-5p [%c] %m%n" />
+		</layout>
+	</appender>
+
+	<!-- Les Loggers -->
+	<logger name="fr.pmu" additivity="false">
+		<level value="DEBUG" />
+		<appender-ref ref="fileApp" />
+		<appender-ref ref="console" />
+	</logger>
+
+	<!-- Loggers du package fr.pmu.sif.services.sas -->
+	<logger name="fr.pmu.sif.services.sas" additivity="false">
+		<level value="DEBUG" />
+		<appender-ref ref="fileApp" />
+		<appender-ref ref="console" />
+	</logger>
+
+	<logger name="org.jboss.system.server.Server">
+		<level value="DEBUG" />
+		<appender-ref ref="fileServer" />
+	</logger>
+
+	<!-- La configuration du root -->
+	<root>
+		<priority value="INFO" />
+		<appender-ref ref="fileApp" />
+		<appender-ref ref="fileServer" />
+		<appender-ref ref="console" />
+	</root>
+</log4j:configuration>

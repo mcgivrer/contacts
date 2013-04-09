@@ -1,0 +1,1 @@
+Here can be copied licensed jar libraries (like sapjco3.jar)
