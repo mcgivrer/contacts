@@ -16,7 +16,7 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 		<hibernate.version>4.1.4.Final</hibernate.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<env.dir>env/local</env.dir>
-		<web.xml>${env.dir}/web.xml</web.xml>
+		<web.xml>assemble/${env.dir}/web.xml</web.xml>
 	</properties>
 
 	<repositories>
