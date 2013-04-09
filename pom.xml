@@ -14,6 +14,9 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 	<properties>
 		<jersey.version>1.12</jersey.version>
 		<hibernate.version>4.1.4.Final</hibernate.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<env.dir>env/local</env.dir>
+		<web.xml>${env.dir}/web.xml</web.xml>
 	</properties>
 
 	<repositories>
@@ -143,23 +146,6 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 			<version>1.8</version>
 		</dependency>
 
-
-
-		<dependency>
-			<groupId>com.capggemini.samples.applications</groupId>
-			<artifactId>contacts.rest.services</artifactId>
-			<version>1.0-SNAPSHOT</version>
-			<classifier>javadoc</classifier>
-		</dependency>
-
-		<dependency>
-			<groupId>com.capggemini.samples.applications</groupId>
-			<artifactId>contacts.rest.services</artifactId>
-			<version>1.0-SNAPSHOT</version>
-			<classifier>sources</classifier>
-		</dependency>
-
-
 	</dependencies>
 	<build>
 		<finalName>contacts</finalName>
@@ -169,8 +155,8 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
 				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
+					<source>1.7</source>
+					<target>1.7</target>
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
