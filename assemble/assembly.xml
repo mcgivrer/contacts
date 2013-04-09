@@ -12,13 +12,13 @@
 	<files>
 		<file>
 			<source>README.md</source>
-			<outputDirectory>/delivery/</outputDirectory>
+			<outputDirectory>/</outputDirectory>
 		</file>
 	</files>
 
 	<dependencySets>
 		<dependencySet>
-			<outputDirectory>/delivery/</outputDirectory>
+			<outputDirectory>/</outputDirectory>
 			<includes>
 				<include>com.capggemini.samples.applications:contacts.rest.services</include>
 			</includes>
@@ -27,7 +27,7 @@
 		</dependencySet>
 
 		<!-- dependencySet>
-			<outputDirectory>/delivery/lib</outputDirectory>
+			<outputDirectory>${project.baseDir}/delivery/lib</outputDirectory>
 			<includes>
 				<include>sas:sas-core</include>
 				<include>sas:sas-svc-connection</include>
@@ -37,20 +37,20 @@
 		</dependencySet -->
 
 		<dependencySet>
-			<outputDirectory>/delivery/sources</outputDirectory>
+			<outputDirectory>/sources</outputDirectory>
 			<includes>
 				<include>*:sources</include>
 			</includes>
 			<unpack>true</unpack>
 
-			<unpackOptions>
+			<!--  unpackOptions>
 				<excludes>
 					<exclude>**/META-INF/**</exclude>
 				</excludes>
-			</unpackOptions>
+			</unpackOptions-->
 		</dependencySet>
 		<dependencySet>
-			<outputDirectory>/delivery/javadoc</outputDirectory>
+			<outputDirectory>/javadoc</outputDirectory>
 			<includes>
 				<include>*:javadoc</include>
 			</includes>
@@ -62,6 +62,5 @@
 			</unpackOptions>
 		</dependencySet>
 	</dependencySets>
-
 
 </assembly>

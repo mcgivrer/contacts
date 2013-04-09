@@ -6,7 +6,7 @@
 	<packaging>war</packaging>
 	<version>1.0-SNAPSHOT</version>
 
-	<name>Contacts management</name>
+	<name>contacts</name>
 	<description>This is a small REST application to serve a contact list service.
 inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-application.html.</description>
 	<url>http://www.mcgivrer.fr/</url>
@@ -14,6 +14,7 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 	<properties>
 		<jersey.version>1.12</jersey.version>
 		<hibernate.version>4.1.4.Final</hibernate.version>
+
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<env.dir>env/local</env.dir>
 		<web.xml>assemble/${env.dir}/web.xml</web.xml>
@@ -119,11 +120,6 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 			<version>1.2.14</version>
 		</dependency>
 		<dependency>
-			<groupId>com.sun.jersey</groupId>
-			<artifactId>jersey-json</artifactId>
-			<version>${jersey.version}</version>
-		</dependency>
-		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>${hibernate.version}</version>
@@ -155,8 +151,8 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.6</source>
+					<target>1.6</target>
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
@@ -212,15 +208,24 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 					<warSourceDirectory>WebContent/</warSourceDirectory>
 
 					<webResources>
+						<!--  Log4J configuration -->
 						<resource>
 							<directory>assemble/${env.dir}/log4j</directory>
 							<targetPath>WEB-INF</targetPath>
 							<!-- enable filtering -->
 							<filtering>true</filtering>
 						</resource>
+						<!--  Libraries configuration -->
 						<resource>
 							<directory>assemble/${env.dir}/lib</directory>
 							<targetPath>WEB-INF/lib</targetPath>
+							<!-- enable filtering -->
+							<filtering>true</filtering>
+						</resource>
+						<!--  web.xml configuration -->
+						<resource>
+							<directory>assemble/${env.dir}/jpa</directory>
+							<targetPath>WEB-INF/</targetPath>
 							<!-- enable filtering -->
 							<filtering>true</filtering>
 						</resource>
@@ -249,7 +254,6 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 					</execution>
 				</executions>
 			</plugin>
-
 
 			<plugin>
 				<groupId>org.mortbay.jetty</groupId>
