@@ -21,11 +21,11 @@ import org.yaml.snakeyaml.constructor.Constructor;
  * @author fdelorme
  * 
  */
-public class GenericTest<T> {
+public class GenericEntityTest<T> {
 	protected static EntityManagerFactory emf;
 	protected static EntityManager em;
 
-	public GenericTest() {
+	public GenericEntityTest() {
 		emf = Persistence.createEntityManagerFactory("test-contacts");
 		em = emf.createEntityManager();
 	}

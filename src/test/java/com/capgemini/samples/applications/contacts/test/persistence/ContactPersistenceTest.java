@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import com.capggemini.samples.applications.contacts.rest.persistence.model.Contact;
 
-public class ContactPersistenceTest extends GenericTest<Contact> {
+public class ContactPersistenceTest extends GenericEntityTest<Contact> {
 
 	/*
 	 * Initialize persistence !
