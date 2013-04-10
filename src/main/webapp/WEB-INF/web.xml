@@ -1,21 +1,37 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
-
-<web-app>
-  <display-name>contacts</display-name>
-  <servlet>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+      version="3.0"> 
+	<display-name>contacts</display-name>
+	
+	<!-- Jersey JAX-RS configuration -->
+	<servlet>
 		<servlet-name>Jersey Web Application</servlet-name>
 		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
-		<init-param> 
-		    	<param-name>javax.ws.rs.Application</param-name> 
-		    	<param-value>com.capggemini.samples.applications.contacts.rest.application.Application</param-value> 
+		<init-param>
+			<param-name>javax.ws.rs.Application</param-name>
+			<param-value>com.capggemini.samples.applications.contacts.rest.application.Application</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>Jersey Web Application</servlet-name>
 		<url-pattern>/rest/*</url-pattern>
+	</servlet-mapping>
+
+	<!-- Log4j configuration -->
+	<servlet>
+		<servlet-name>Log4JInitServlet</servlet-name>
+		<servlet-class>com.capggemini.samples.applications.contacts.rest.tools.log.Log4JInitServlet</servlet-class>
+		<init-param>
+			<param-name>log4j-properties-location</param-name>
+			<param-value>WEB-INF/log4j.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Log4JInitServlet</servlet-name>
+		<url-pattern>/init</url-pattern>
 	</servlet-mapping>
 
 

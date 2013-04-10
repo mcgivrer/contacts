@@ -141,7 +141,7 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 			<artifactId>snakeyaml</artifactId>
 			<version>1.8</version>
 		</dependency>
-
+		
 	</dependencies>
 	<build>
 		<finalName>contacts</finalName>
@@ -221,6 +221,7 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 							<targetPath>WEB-INF/lib</targetPath>
 							<!-- enable filtering -->
 							<filtering>true</filtering>
+							
 						</resource>
 						<!--  web.xml configuration -->
 						<resource>
