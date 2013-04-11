@@ -149,7 +149,7 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 			<artifactId>snakeyaml</artifactId>
 			<version>1.8</version>
 		</dependency>
-		
+
 	</dependencies>
 	<build>
 		<finalName>contacts</finalName>
@@ -216,22 +216,22 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 					<warSourceDirectory>src/main/webapp</warSourceDirectory>
 
 					<webResources>
-						<!--  Log4J configuration -->
+						<!-- Log4J configuration -->
 						<resource>
 							<directory>assemble/${env.dir}/log4j</directory>
 							<targetPath>WEB-INF</targetPath>
 							<!-- enable filtering -->
 							<filtering>true</filtering>
 						</resource>
-						<!--  Libraries configuration -->
+						<!-- Libraries configuration -->
 						<resource>
 							<directory>assemble/${env.dir}/lib</directory>
 							<targetPath>WEB-INF/lib</targetPath>
 							<!-- enable filtering -->
 							<filtering>true</filtering>
-							
+
 						</resource>
-						<!--  web.xml configuration -->
+						<!-- web.xml configuration -->
 						<resource>
 							<directory>assemble/${env.dir}/jpa</directory>
 							<targetPath>WEB-INF/</targetPath>
@@ -292,7 +292,7 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 				</executions>
 				<configuration>
 					<keystore>${project.build.directory}/jetty-ssl.keystore</keystore>
-					<dname>cn=www.mcgivrer.fr</dname>
+					<dname>cn=www.capgemini.com</dname>
 					<keypass>jetty6</keypass>
 					<storepass>jetty6</storepass>
 					<alias>jetty6</alias>
@@ -300,16 +300,14 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 				</configuration>
 			</plugin>
 
-			<!-- Test Server configuration -->
+
 			<plugin>
 				<groupId>org.mortbay.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
-				<version>7.4.5.v20110725</version>
+				<version>8.0.4.v20111024</version>
 				<configuration>
-					<scanIntervalSeconds>10</scanIntervalSeconds>
-					<webAppConfig>
-						<contextPath>/contacts</contextPath>
-					</webAppConfig>
+					<scanIntervalSeconds>3</scanIntervalSeconds>
+
 
 					<scanTargets>
 						<scanTarget>src/main/webapp</scanTarget>
@@ -317,8 +315,13 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 						<scanTarget>src/main/java</scanTarget>
 					</scanTargets>
 
-					<!-- Security Realm temporary created users 
-					     from users.properties file -->
+					<stopPort>9912</stopPort>
+					<stopKey>123</stopKey>
+					<jettyXml>src/main/webapp/WEB-INF/jetty.xml</jettyXml>
+					<classesDirectory>${build.directory}/classes</classesDirectory>
+
+
+					<!-- Security Realm temporary created users from users.properties file -->
 					<userRealms>
 						<userRealm implementation="org.mortbay.jetty.security.HashUserRealm">
 							<name>MyRealm</name>
@@ -341,7 +344,7 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 							<keyPassword>jetty6</keyPassword>
 						</connector>
 					</connectors>
-					
+
 					<!-- Login service to provide login capabilities on jetty -->
 					<loginServices>
 						<loginService implementation="org.eclipse.jetty.security.HashLoginService">
@@ -364,10 +367,150 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 						<extended>true</extended>
 						<logTimeZone>GMT</logTimeZone>
 					</requestLog>
-
 				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>com.sun.faces</groupId>
+						<artifactId>jsf-api</artifactId>
+						<version>2.1.2</version>
+					</dependency>
+					<dependency>
+						<groupId>com.sun.faces</groupId>
+						<artifactId>jsf-impl</artifactId>
+						<version>2.1.2</version>
+					</dependency>
+
+					<dependency>
+						<groupId>org.richfaces.ui</groupId>
+						<artifactId>richfaces-components-api</artifactId>
+						<version>4.0.0.Final</version>
+					</dependency>
+
+					<dependency>
+						<groupId>org.richfaces.ui</groupId>
+						<artifactId>richfaces-components-ui</artifactId>
+						<version>4.0.0.Final</version>
+					</dependency>
+
+					<dependency>
+						<groupId>org.richfaces.core</groupId>
+						<artifactId>richfaces-core-api</artifactId>
+						<version>4.0.0.Final</version>
+					</dependency>
+
+					<dependency>
+						<groupId>org.richfaces.core</groupId>
+						<artifactId>richfaces-core-impl</artifactId>
+						<version>4.0.0.Final</version>
+					</dependency>
+
+					<!-- groovy -->
+					<dependency>
+						<groupId>org.codehaus.groovy</groupId>
+						<artifactId>groovy-all</artifactId>
+						<version>1.8.0</version>
+					</dependency>
+
+					<!-- persistence -->
+					<dependency>
+						<groupId>org.hibernate</groupId>
+						<artifactId>hibernate-entitymanager</artifactId>
+						<version>4.0.0.Final</version>
+					</dependency>
+
+					<dependency>
+						<groupId>org.hibernate.javax.persistence</groupId>
+						<artifactId>hibernate-jpa-2.0-api</artifactId>
+						<version>1.0.0.Final</version>
+					</dependency>
+					<dependency>
+						<groupId>org.hibernate</groupId>
+						<artifactId>hibernate-core</artifactId>
+						<version>4.0.0.Final</version>
+					</dependency>
+
+					<dependency>
+						<groupId>org.objectweb.howl</groupId>
+						<artifactId>howl</artifactId>
+						<version>1.0.1-1</version>
+					</dependency>
+					<dependency>
+						<groupId>org.ow2.spec.ee</groupId>
+						<artifactId>ow2-connector-1.5-spec</artifactId>
+						<version>1.0.10</version>
+					</dependency>
+					<dependency>
+						<groupId>org.ow2.jotm</groupId>
+						<artifactId>jotm-core</artifactId>
+						<version>2.2.3</version>
+					</dependency>
+					<!-- cheating. using our own carol.jar from system path -->
+					<!-- with correct carol.properties file -->
+					<dependency>
+						<groupId>org.ow2.carol</groupId>
+						<artifactId>carol</artifactId>
+						<version>3.0.8</version>
+						<scope>system</scope>
+						<systemPath>${project.basedir}/lib/carol.jar</systemPath>
+					</dependency>
+					<dependency>
+						<groupId>com.experlog</groupId>
+						<artifactId>xapool</artifactId>
+						<version>1.5.0</version>
+					</dependency>
+
+
+					<dependency>
+						<groupId>postgresql</groupId>
+						<artifactId>postgresql</artifactId>
+						<version>9.1-901.jdbc4</version>
+					</dependency>
+				</dependencies>
 			</plugin>
 
 		</plugins>
+		<pluginManagement>
+			<plugins>
+				<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>
+											org.codehaus.mojo
+										</groupId>
+										<artifactId>
+											keytool-maven-plugin
+										</artifactId>
+										<versionRange>
+											[1.2,)
+										</versionRange>
+										<goals>
+											<goal>clean</goal>
+											<goal>genkey</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore></ignore>
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 	</build>
+	<organization>
+		<url>http://www.capgemini.com</url>
+		<name>Capgemini TS</name>
+	</organization>
+	<scm>
+		<url>http://bitbucket.org/mcgivrer/</url>
+	</scm>
 </project>

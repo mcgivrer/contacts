@@ -10,4 +10,4 @@ INSERT INTO CONTACT VALUES(3,'akubler','arnaud.kuble@capgemini.com','Arnaud',NUL
 INSERT INTO CONTACT VALUES(4,'npatient','nicolas.patient@capgemini.com','Nicolas',NULL)
 INSERT INTO CONTACT VALUES(5,'rfrigui','rassil.friggi@capgemini.com','Rassil',NULL)
 INSERT INTO CONTACT VALUES(6,'npatient','nicolas.patient@capgemini.com','Nicolas',NULL)
-INSERT INTO CONTACT VALUES(7,'jmuhr','jeremy.muhr@capgemini.com','J\u00c3\u00a9r\u00c3\u00a9my',NULL)
+INSERT INTO CONTACT VALUES(7,'jmuhr','jeremy.muhr@capgemini.com','J\u00e9r\u00e9my',NULL)

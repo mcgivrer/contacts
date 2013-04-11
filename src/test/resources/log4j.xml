@@ -5,7 +5,7 @@
 
 	<!-- Les Appenders -->
 	<appender name="fileServer" class="org.apache.log4j.DailyRollingFileAppender">
-		<param name="File" value="${jboss.server.home.dir}/log/server-${project.name}.log" />
+		<param name="File" value="logs/server-jetty-contacts.log" />
 		<param name="Append" value="true" />
 		
 		<!-- keep logs of the last seven days and delete older ones 
@@ -32,7 +32,7 @@
 	</appender>
 
 	<appender name="fileApp" class="org.apache.log4j.DailyRollingFileAppender">
-		<param name="File" value="${jboss.server.home.dir}/log/${project.name}.log" />
+		<param name="File" value="logs/contacts.log" />
 		<param name="DatePattern" value="'.'yyyy-MM-dd" />
 		
 		<!-- keep logs of the last seven days and delete older ones 
@@ -45,22 +45,10 @@
 	</appender>
 
 	<!-- Les Loggers -->
-	<logger name="fr.pmu" additivity="false">
+	<logger name="com.capggemini.samples.applications.contacts.rest" additivity="false">
 		<level value="DEBUG" />
 		<appender-ref ref="fileApp" />
 		<appender-ref ref="console" />
-	</logger>
-
-	<!-- Loggers du package fr.pmu.sif.services.sas -->
-	<logger name="fr.pmu.sif.services.sas" additivity="false">
-		<level value="DEBUG" />
-		<appender-ref ref="fileApp" />
-		<appender-ref ref="console" />
-	</logger>
-
-	<logger name="org.jboss.system.server.Server">
-		<level value="DEBUG" />
-		<appender-ref ref="fileServer" />
 	</logger>
 
 	<!-- La configuration du root -->

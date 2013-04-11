@@ -3,7 +3,10 @@ package com.capggemini.samples.applications.contacts.rest.persistence;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.lang.reflect.ParameterizedType;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -12,6 +15,7 @@ import javax.persistence.PersistenceException;
 import javax.persistence.Query;
 
 import org.apache.log4j.Logger;
+import org.codehaus.jackson.map.ObjectMapper;
 import org.yaml.snakeyaml.Yaml;
 
 /**
@@ -71,7 +75,7 @@ public class GenericDao<T, PK> {
 			emf = Persistence.createEntityManagerFactory("contacts");
 			logger.debug("Entity Manager Factory Initialiazed");
 		}
-		
+
 		init();
 	}
 
@@ -82,7 +86,7 @@ public class GenericDao<T, PK> {
 	 *            EntityManager
 	 */
 	public GenericDao(EntityManagerFactory emf) {
-		super();
+		this();
 		GenericDao.emf = emf;
 		init();
 	}
@@ -145,7 +149,6 @@ public class GenericDao<T, PK> {
 		return this.list;
 	}
 
-
 	/**
 	 * Retrieve the <code>entity</code> T on its primaryKey <code>pk</code>.
 	 * 
@@ -161,7 +164,7 @@ public class GenericDao<T, PK> {
 		logger.debug("done.");
 		return entity;
 	}
-	
+
 	/**
 	 * Save to persistence the entity in a transaction.
 	 * 
@@ -174,12 +177,13 @@ public class GenericDao<T, PK> {
 		boolean transactionActive = false;
 		try {
 
-			transactionActive = em.getTransaction()!=null && em.getTransaction().isActive();
+			transactionActive = em.getTransaction() != null
+					&& em.getTransaction().isActive();
 			if (!transactionActive) {
 				logger.debug("Start Transaction");
 				em.getTransaction().begin();
 			}
-			em.persist(entity);
+			entity = em.merge(entity);
 			if (!transactionActive) {
 				em.getTransaction().commit();
 				logger.debug("Transaction commited");
@@ -197,19 +201,20 @@ public class GenericDao<T, PK> {
 		return entity;
 	}
 
-
 	public void delete(PK pk) {
 		logger.debug(String.format("Delete Entity %s on Primary key %s ...",
 				entityClass, pk));
 		boolean transactionActive = false;
 		try {
-			transactionActive = em.getTransaction()!=null && em.getTransaction().isActive();
+			transactionActive = em.getTransaction() != null
+					&& em.getTransaction().isActive();
 			if (!transactionActive) {
 				em.getTransaction().begin();
 			}
 			T entity = em.find(entityClass, pk);
 			em.remove(entity);
-			logger.debug(String.format("remove entity %s(%s)", entityClass, entity));
+			logger.debug(String.format("remove entity %s(%s)", entityClass,
+					entity));
 			if (!transactionActive) {
 				em.getTransaction().commit();
 			}
@@ -278,17 +283,73 @@ public class GenericDao<T, PK> {
 	 */
 	public void loadFromYaml(String filename) {
 		FileReader fileReader;
+		Map<String, Object> persistedEntities = new HashMap<String, Object>();
 		try {
 			fileReader = new FileReader(this.getClass().getResource("/")
 					.getPath()
 					+ filename);
 			if (filename != null && !filename.equals("") && fileReader != null) {
-
+				boolean trasnsactionActivated = false;
 				Yaml yaml = new Yaml();
-				@SuppressWarnings("unchecked")
-				Object entities = yaml.load(fileReader);
-				logger.debug(entities);
+				try {
+					trasnsactionActivated = em.getTransaction() != null
+							& em.getTransaction().isActive();
+					if (!trasnsactionActivated) {
+						em.getTransaction().begin();
+					}
+					List<?> entities = (List<?>) yaml.load(fileReader);
+					for (Object entity : entities) {
+						@SuppressWarnings("unchecked")
+						LinkedHashMap<String, HashMap<String, Object>> lhm = (LinkedHashMap<String, HashMap<String, Object>>) entity;
+						logger.debug(String.format("lhm=%s", lhm));
+						ObjectMapper om = new ObjectMapper();
+						String className = null;
+						String id = null;
+						for (String key : lhm.keySet()) {
+							className = key.substring(0, key.indexOf("("));
+							id = key.substring(key.indexOf("(") + 1,
+									key.indexOf(")"));
+							Object entityConverted = null;
+							try {
+								Class<?> entityClassToInstanciate = Class
+										.forName(className);
+								entityConverted = om.convertValue(lhm.get(key),
+										entityClassToInstanciate);
 
+								entityConverted = em.merge(entityConverted);
+								
+								persistedEntities.put(id, entityConverted);
+								em.persist(entityConverted);
+								logger.debug(String.format(
+										"Entity[%s]%s => %s", entity.getClass()
+												.getSimpleName(), entity,
+										entityConverted.toString()));
+							} catch (ClassNotFoundException e) {
+								logger.fatal(String.format(
+										"Unknown class %s for entity %s",
+										className, entityConverted), e);
+							} catch (PersistenceException e) {
+								logger.fatal(
+										String.format(
+												"Unable to save the entityConverted:%s",
+												entityConverted), e);
+							}
+
+						}
+						if (!trasnsactionActivated) {
+							em.getTransaction().commit();
+						}
+					}
+				} catch (PersistenceException te) {
+					if (!trasnsactionActivated) {
+						em.getTransaction().rollback();
+					}
+					logger.fatal(String.format(
+							"Error on transaction during loading yml file %s",
+							filename), te);
+				} finally {
+					//em.close();
+				}
 			}
 		} catch (FileNotFoundException e) {
 			list = null;

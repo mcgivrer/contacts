@@ -2,6 +2,8 @@ package com.capgemini.samples.applications.contacts.test.persistence;
 
 import static org.junit.Assert.assertEquals;
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 import com.capggemini.samples.applications.contacts.rest.persistence.dao.ContactDao;
@@ -9,8 +11,18 @@ import com.capggemini.samples.applications.contacts.rest.persistence.model.Conta
 
 public class ContactPersistenceTest extends GenericEntityTest<Contact> {
 
-	ContactDao contacts = new ContactDao();
-	
+	ContactDao contacts = null;;
+
+	@Before
+	public void setup() {
+		contacts = new ContactDao(this.emf);
+	}
+
+	@After
+	public void destroy() {
+		contacts = null;
+	}
+
 	/*
 	 * Initialize persistence !
 	 */
@@ -26,9 +38,10 @@ public class ContactPersistenceTest extends GenericEntityTest<Contact> {
 		Contact contact = new Contact("user01", "user.01@mail.com", "user",
 				"01");
 		contacts.save(contact);
-		assertEquals("Contact was not correctly initialized", null,
-				contact.getContactId());
+		assertEquals("Contact was not correctly initialized", false,
+				contact.getContactId()!=null);
 	}
+
 	/**
 	 * 
 	 */

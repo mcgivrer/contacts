@@ -1,7 +1,6 @@
-<web-app xmlns="http://java.sun.com/xml/ns/javaee"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
-      version="3.0"> 
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
 	<display-name>contacts</display-name>
 	<description>Java Web Contacts management application based on HTML5, AngularJS on client side, and JAX-RS and JPA on server side.</description>
 	<!-- Jersey JAX-RS configuration -->
@@ -46,10 +45,18 @@
 			<role-name>moderator</role-name>
 		</auth-constraint>
 	</security-constraint>
- 
- 	<!-- login system -->
+
+	<!-- login system -->
 	<login-config>
 		<auth-method>BASIC</auth-method>
 		<realm-name>MyRealm</realm-name>
 	</login-config>
+
+
+	<resource-ref>
+		<description>Contacts datasource</description>
+		<res-ref-name>jdbc/contactsDS</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref>
 </web-app>
