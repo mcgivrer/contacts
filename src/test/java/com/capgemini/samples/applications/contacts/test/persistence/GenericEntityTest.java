@@ -54,11 +54,11 @@ public class GenericEntityTest<T> {
 			dataio = new FileReader(this.getClass().getResource("/").getPath()
 					+ dataFile);
 			list = (List<T>) yaml.load(dataio);
-			for (T object : list) {
+			for (T entity : list) {
 				
-				System.out.println(object.toString());
+				System.out.println(entity.toString());
 				
-				//em.persist(object);
+				//em.persist(entity);
 			}
 
 		} catch (FileNotFoundException e) {

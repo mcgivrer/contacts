@@ -1,15 +1,18 @@
-- 
-  userame: fdelorme
-  lastName: Delorme
-  firstName: Frédéric
-  email: frederic.delorme@capgemini.com
-- 
-  username: gscheibel
-  lastName: Scheibel
-  firstName: Guillaume
-  email: guillaume.scheibel@capgemini.com
-- 
-  username: jmuhr
-  lastName: Muhr
-  firstName: Jérémy
-  email: jeremy.muhr@capgemini.com
+- com.capggemini.samples.applications.contacts.rest.persistence.model.Contact(fde):
+    contatId: 1
+    username: fdelorme
+    lastName: Delorme
+    firstName: Frédéric
+    email: frederic.delorme@capgemini.com
+- com.capggemini.samples.applications.contacts.rest.persistence.model.Contact(gse):
+    contatId: 2
+    username: gscheibel
+    lastName: Scheibel
+    firstName: Guillaume
+    email: guillaume.scheibel@capgemini.com
+- com.capggemini.samples.applications.contacts.rest.persistence.model.Contact(jmu):
+    contatId: 3
+    username: jmuhr
+    lastName: Muhr
+    firstName: Jérémy
+    email: jeremy.muhr@capgemini.com

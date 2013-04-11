@@ -4,10 +4,11 @@ CREATE USER SA PASSWORD ""
 GRANT DBA TO SA
 SET WRITE_DELAY 10
 SET SCHEMA PUBLIC
-INSERT INTO CONTACT VALUES(1,'fdelorme','frederic.delorme@capgemini.com','Fr\u00c3\u00a9d\u00c3\u00a9ric',NULL)
+INSERT INTO CONTACT VALUES(1,'fdelorme','frederic.delorme@capgemini.com','Fr\u00e9d\u00e9ric',NULL)
 INSERT INTO CONTACT VALUES(2,'gscheibel','guillaume.scheibel@capgemini.com','Guillaume',NULL)
 INSERT INTO CONTACT VALUES(3,'akubler','arnaud.kuble@capgemini.com','Arnaud',NULL)
 INSERT INTO CONTACT VALUES(4,'npatient','nicolas.patient@capgemini.com','Nicolas',NULL)
 INSERT INTO CONTACT VALUES(5,'rfrigui','rassil.friggi@capgemini.com','Rassil',NULL)
 INSERT INTO CONTACT VALUES(6,'npatient','nicolas.patient@capgemini.com','Nicolas',NULL)
 INSERT INTO CONTACT VALUES(7,'jmuhr','jeremy.muhr@capgemini.com','J\u00c3\u00a9r\u00c3\u00a9my',NULL)
+

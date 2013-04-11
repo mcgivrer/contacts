@@ -3,7 +3,7 @@
       xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
       version="3.0"> 
 	<display-name>contacts</display-name>
-	
+	<description>Java Web Contacts management application based on HTML5, AngularJS on client side, and JAX-RS and JPA on server side.</description>
 	<!-- Jersey JAX-RS configuration -->
 	<servlet>
 		<servlet-name>Jersey Web Application</servlet-name>
@@ -34,5 +34,22 @@
 		<url-pattern>/init</url-pattern>
 	</servlet-mapping>
 
-
+	<!-- Authorization -->
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>A Protected Page</web-resource-name>
+			<url-pattern>/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>admin</role-name>
+			<role-name>user</role-name>
+			<role-name>moderator</role-name>
+		</auth-constraint>
+	</security-constraint>
+ 
+ 	<!-- login system -->
+	<login-config>
+		<auth-method>BASIC</auth-method>
+		<realm-name>MyRealm</realm-name>
+	</login-config>
 </web-app>
