@@ -39,32 +39,4 @@ public class GenericEntityTest<T> {
 		em = emf.createEntityManager();
 	}
 
-	/**
-	 * Parse the *.yaml file <code>dataFile</code> to store contains described
-	 * data of <code>className</code> type to the persistence.
-	 * 
-	 * @param dataFile
-	 * @param className
-	 */
-	protected void loadTestData(String dataFile, Class<?> entityClass) {
-		
-		Yaml yaml = new Yaml(new Constructor(ArrayList.class));
-		FileReader dataio;
-		try {
-			dataio = new FileReader(this.getClass().getResource("/").getPath()
-					+ dataFile);
-			list = (List<T>) yaml.load(dataio);
-			for (T entity : list) {
-				
-				System.out.println(entity.toString());
-				
-				//em.persist(entity);
-			}
-
-		} catch (FileNotFoundException e) {
-			log.fatal("Unable to read file",e);
-		}
-
-	}
-
 }

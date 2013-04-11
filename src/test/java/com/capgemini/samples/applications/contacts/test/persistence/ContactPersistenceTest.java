@@ -4,10 +4,13 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+import com.capggemini.samples.applications.contacts.rest.persistence.dao.ContactDao;
 import com.capggemini.samples.applications.contacts.rest.persistence.model.Contact;
 
 public class ContactPersistenceTest extends GenericEntityTest<Contact> {
 
+	ContactDao contacts = new ContactDao();
+	
 	/*
 	 * Initialize persistence !
 	 */
@@ -22,14 +25,16 @@ public class ContactPersistenceTest extends GenericEntityTest<Contact> {
 	public void saveContactTest() {
 		Contact contact = new Contact("user01", "user.01@mail.com", "user",
 				"01");
-		em.persist(contact);
-		assertEquals("Contact was not correctly initialized", 0,
+		contacts.save(contact);
+		assertEquals("Contact was not correctly initialized", null,
 				contact.getContactId());
 	}
+	/**
+	 * 
+	 */
 	@Test
 	public void loadContactTest() {
-		loadTestData("data/contact.yaml", Contact.class);
+		contacts.loadFromYaml("data/contact.yaml");
 	}
-
 
 }

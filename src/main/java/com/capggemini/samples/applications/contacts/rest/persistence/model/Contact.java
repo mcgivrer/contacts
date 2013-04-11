@@ -12,7 +12,7 @@ public class Contact {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int contactId;
+	private Long contactId;
 	private String username;
 	private String firstName;
 	private String lastName;
@@ -47,11 +47,11 @@ public class Contact {
 		this.username = username;
 	}
 
-	public int getContactId() {
+	public Long getContactId() {
 		return contactId;
 	}
 
-	public void setContactId(int contactId) {
+	public void setContactId(Long contactId) {
 		this.contactId = contactId;
 	}
 
