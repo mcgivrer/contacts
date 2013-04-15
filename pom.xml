@@ -444,27 +444,19 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 						<artifactId>jotm-core</artifactId>
 						<version>2.2.3</version>
 					</dependency>
-					<!-- cheating. using our own carol.jar from system path -->
-					<!-- with correct carol.properties file -->
+
 					<dependency>
-						<groupId>org.ow2.carol</groupId>
-						<artifactId>carol</artifactId>
-						<version>3.0.8</version>
-						<scope>system</scope>
-						<systemPath>${project.basedir}/lib/carol.jar</systemPath>
+						<groupId>hsqldb</groupId>
+						<artifactId>hsqldb</artifactId>
+						<version>1.8.0.10</version>
 					</dependency>
+					
 					<dependency>
 						<groupId>com.experlog</groupId>
 						<artifactId>xapool</artifactId>
 						<version>1.5.0</version>
 					</dependency>
 
-
-					<dependency>
-						<groupId>postgresql</groupId>
-						<artifactId>postgresql</artifactId>
-						<version>9.1-901.jdbc4</version>
-					</dependency>
 				</dependencies>
 			</plugin>
 
