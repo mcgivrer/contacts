@@ -45,7 +45,7 @@
 	</appender>
 
 	<!-- Les Loggers -->
-	<logger name="com.capggemini.samples.applications.contacts.rest" additivity="false">
+	<logger name="com.capgemini.contacts" additivity="false">
 		<level value="DEBUG" />
 		<appender-ref ref="fileApp" />
 		<appender-ref ref="console" />

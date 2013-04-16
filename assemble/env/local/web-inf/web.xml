@@ -10,7 +10,7 @@
 		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
 		<init-param>
 			<param-name>javax.ws.rs.Application</param-name>
-			<param-value>com.capggemini.samples.applications.contacts.rest.application.Application</param-value>
+			<param-value>com.capgemini.contacts.application.Application</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
@@ -22,7 +22,7 @@
 	<!-- Log4j configuration -->
 	<servlet>
 		<servlet-name>Log4JInitServlet</servlet-name>
-		<servlet-class>com.capggemini.samples.applications.contacts.rest.tools.log.Log4JInitServlet</servlet-class>
+		<servlet-class>com.capgemini.contacts.tools.log.Log4JInitServlet</servlet-class>
 		<init-param>
 			<param-name>log4j-properties-location</param-name>
 			<param-value>WEB-INF/log4j.xml</param-value>

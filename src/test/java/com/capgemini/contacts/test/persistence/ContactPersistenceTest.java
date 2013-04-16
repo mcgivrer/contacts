@@ -1,4 +1,4 @@
-package com.capgemini.samples.applications.contacts.test.persistence;
+package com.capgemini.contacts.test.persistence;
 
 import static org.junit.Assert.assertEquals;
 
@@ -6,9 +6,9 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.capgemini.samples.applications.contacts.persistence.test.GenericEntityTest;
-import com.capggemini.samples.applications.contacts.rest.persistence.dao.ContactDao;
-import com.capggemini.samples.applications.contacts.rest.persistence.model.Contact;
+import com.capgemini.contacts.persistence.dao.ContactDao;
+import com.capgemini.contacts.persistence.model.Contact;
+import com.capgemini.contacts.persistence.test.GenericEntityTest;
 
 public class ContactPersistenceTest extends GenericEntityTest<Contact> {
 
@@ -16,7 +16,7 @@ public class ContactPersistenceTest extends GenericEntityTest<Contact> {
 
 	@Before
 	public void setup() {
-		contacts = new ContactDao(this.emf);
+		contacts = new ContactDao(ContactPersistenceTest.emf);
 	}
 
 	@After

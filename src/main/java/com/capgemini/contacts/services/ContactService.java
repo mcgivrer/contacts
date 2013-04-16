@@ -1,4 +1,4 @@
-package com.capggemini.samples.applications.contacts.rest.services;
+package com.capgemini.contacts.services;
 
 import java.util.List;
 
@@ -18,8 +18,8 @@ import javax.ws.rs.core.MediaType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.capggemini.samples.applications.contacts.rest.persistence.dao.ContactDao;
-import com.capggemini.samples.applications.contacts.rest.persistence.model.Contact;
+import com.capgemini.contacts.persistence.dao.ContactDao;
+import com.capgemini.contacts.persistence.model.Contact;
 
 @Path("/contact")
 public class ContactService {

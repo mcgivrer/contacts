@@ -1,12 +1,12 @@
 /**
  * 
  */
-package com.capggemini.samples.applications.contacts.rest.persistence.dao;
+package com.capgemini.contacts.persistence.dao;
 
 import javax.persistence.EntityManagerFactory;
 
-import com.capggemini.samples.applications.contacts.rest.persistence.GenericDao;
-import com.capggemini.samples.applications.contacts.rest.persistence.model.Contact;
+import com.capgemini.contacts.persistence.GenericDao;
+import com.capgemini.contacts.persistence.model.Contact;
 
 /**
  * @author FDELORME

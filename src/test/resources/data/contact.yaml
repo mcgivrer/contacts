@@ -1,17 +1,14 @@
-- com.capggemini.samples.applications.contacts.rest.persistence.model.Contact(fde):
-    contactId: 1
+- com.capgemini.contacts.persistence.model.Contact(fde):
     username: fdelorme
     lastName: Delorme
     firstName: Frédéric
     email: frederic.delorme@capgemini.com
-- com.capggemini.samples.applications.contacts.rest.persistence.model.Contact(gse):
-    contactId: 2
+- com.capgemini.contacts.persistence.model.Contact(gse):
     username: gscheibel
     lastName: Scheibel
     firstName: Guillaume
     email: guillaume.scheibel@capgemini.com
-- com.capggemini.samples.applications.contacts.rest.persistence.model.Contact(jmu):
-    contactId: 3
+- com.capgemini.contacts.persistence.model.Contact(jmu):
     username: jmuhr
     lastName: Muhr
     firstName: Jérémy

@@ -1,8 +1,7 @@
-package com.capggemini.samples.applications.contacts.rest.persistence.model;
+package com.capgemini.contacts.persistence.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -11,7 +10,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Contact {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue
 	private Long contactId;
 	private String username;
 	private String firstName;

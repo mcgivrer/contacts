@@ -1,4 +1,4 @@
-package com.capggemini.samples.applications.contacts.rest.persistence;
+package com.capgemini.contacts.persistence;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -198,7 +198,7 @@ public class GenericDao<T, PK> {
 					entity));
 
 		} catch (Throwable t) {
-			entity =null;
+			entity = null;
 		}
 		logger.debug("done.");
 		return entity;
@@ -292,12 +292,9 @@ public class GenericDao<T, PK> {
 										.forName(className);
 								entityConverted = om.convertValue(lhm.get(key),
 										entityClassToInstanciate);
+								em.persist(entityConverted);
 
-								//entityConverted = 
-								em.persist(entityConverted);
-								
 								persistedEntities.put(id, entityConverted);
-								em.persist(entityConverted);
 								logger.debug(String.format(
 										"Entity[%s]%s => %s", entity.getClass()
 												.getSimpleName(), entity,
@@ -317,10 +314,9 @@ public class GenericDao<T, PK> {
 					}
 				} catch (PersistenceException te) {
 					logger.fatal(String.format(
-							"Error during loading yml file %s",
-							filename), te);
+							"Error during loading yml file %s", filename), te);
 				} finally {
-					//em.close();
+					// em.close();
 				}
 			}
 		} catch (FileNotFoundException e) {

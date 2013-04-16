@@ -9,7 +9,7 @@
 		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
 		<init-param> 
 		    	<param-name>javax.ws.rs.Application</param-name> 
-		    	<param-value>com.capggemini.samples.applications.contacts.rest.application.Application</param-value> 
+		    	<param-value>com.capgemini.contacts.application.Application</param-value> 
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>

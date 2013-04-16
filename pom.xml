@@ -109,7 +109,7 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 			<artifactId>jersey-servlet</artifactId>
 			<version>1.17.1</version>
 		</dependency>
-		
+
 		<!-- persistence -->
 		<dependency>
 			<groupId>org.hibernate.javax.persistence</groupId>
@@ -363,6 +363,16 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 						<logTimeZone>GMT</logTimeZone>
 					</requestLog>
 				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.1</version>
+				<configuration>
+					<tomcatUsers>${project.build.directory}/classes/users.properties</tomcatUsers>
+				</configuration>
+
 			</plugin>
 
 		</plugins>

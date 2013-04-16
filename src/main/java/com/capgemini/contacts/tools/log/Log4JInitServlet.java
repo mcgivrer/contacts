@@ -1,4 +1,4 @@
-package com.capggemini.samples.applications.contacts.rest.tools.log;
+package com.capgemini.contacts.tools.log;
 
 import java.io.File;
 import java.io.IOException;

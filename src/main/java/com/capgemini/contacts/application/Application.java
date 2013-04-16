@@ -1,4 +1,4 @@
-package com.capggemini.samples.applications.contacts.rest.application;
+package com.capgemini.contacts.application;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -10,7 +10,7 @@ import javax.ws.rs.ApplicationPath;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.capggemini.samples.applications.contacts.rest.services.ContactService;
+import com.capgemini.contacts.services.ContactService;
 
 @ApplicationPath("rest")
 public class Application extends javax.ws.rs.core.Application{
