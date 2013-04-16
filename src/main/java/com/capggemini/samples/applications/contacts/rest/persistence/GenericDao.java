@@ -93,7 +93,7 @@ public class GenericDao<T, PK> {
 
 	public void init() {
 		em = emf.createEntityManager();
-		logger.debug("EntityManeger initialized.");
+		logger.debug("EntityManager initialized.");
 	}
 
 	/**
@@ -174,57 +174,34 @@ public class GenericDao<T, PK> {
 	public T save(T entity) {
 		logger.debug(String.format("Save entity %s ...",
 				entityClass.getSimpleName()));
-		boolean transactionActive = false;
 		try {
 
-			transactionActive = em.getTransaction() != null
-					&& em.getTransaction().isActive();
-			if (!transactionActive) {
-				logger.debug("Start Transaction");
-				em.getTransaction().begin();
-			}
 			entity = em.merge(entity);
-			if (!transactionActive) {
-				em.getTransaction().commit();
-				logger.debug("Transaction commited");
-			}
 			logger.debug(String.format("insert %s :  %s",
 					entityClass.getSimpleName(), entity));
 		} catch (PersistenceException e) {
-			if (em.getTransaction().isActive()) {
-				em.getTransaction().rollback();
-				logger.debug("Error during transaction. Rollback.", e);
-			}
 			entity = null;
 		}
 		logger.debug("done.");
 		return entity;
 	}
 
-	public void delete(PK pk) {
+	public T delete(PK pk) {
 		logger.debug(String.format("Delete Entity %s on Primary key %s ...",
 				entityClass, pk));
-		boolean transactionActive = false;
+		T entity = null;
 		try {
-			transactionActive = em.getTransaction() != null
-					&& em.getTransaction().isActive();
-			if (!transactionActive) {
-				em.getTransaction().begin();
-			}
-			T entity = em.find(entityClass, pk);
+
+			entity = em.find(entityClass, pk);
 			em.remove(entity);
 			logger.debug(String.format("remove entity %s(%s)", entityClass,
 					entity));
-			if (!transactionActive) {
-				em.getTransaction().commit();
-			}
+
 		} catch (Throwable t) {
-			if (em.getTransaction().isActive()) {
-				em.getTransaction().rollback();
-			}
+			entity =null;
 		}
 		logger.debug("done.");
-
+		return entity;
 	}
 
 	/**
@@ -316,7 +293,8 @@ public class GenericDao<T, PK> {
 								entityConverted = om.convertValue(lhm.get(key),
 										entityClassToInstanciate);
 
-								entityConverted = em.merge(entityConverted);
+								//entityConverted = 
+								em.persist(entityConverted);
 								
 								persistedEntities.put(id, entityConverted);
 								em.persist(entityConverted);
@@ -336,16 +314,10 @@ public class GenericDao<T, PK> {
 							}
 
 						}
-						if (!trasnsactionActivated) {
-							em.getTransaction().commit();
-						}
 					}
 				} catch (PersistenceException te) {
-					if (!trasnsactionActivated) {
-						em.getTransaction().rollback();
-					}
 					logger.fatal(String.format(
-							"Error on transaction during loading yml file %s",
+							"Error during loading yml file %s",
 							filename), te);
 				} finally {
 					//em.close();

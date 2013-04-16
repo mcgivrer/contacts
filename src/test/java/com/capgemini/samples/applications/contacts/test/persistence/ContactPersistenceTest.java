@@ -6,6 +6,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.capgemini.samples.applications.contacts.persistence.test.GenericEntityTest;
 import com.capggemini.samples.applications.contacts.rest.persistence.dao.ContactDao;
 import com.capggemini.samples.applications.contacts.rest.persistence.model.Contact;
 
@@ -46,7 +47,7 @@ public class ContactPersistenceTest extends GenericEntityTest<Contact> {
 	 * 
 	 */
 	@Test
-	public void loadContactTest() {
+	public void loadContactFromYamlTest() {
 		contacts.loadFromYaml("data/contact.yaml");
 	}
 

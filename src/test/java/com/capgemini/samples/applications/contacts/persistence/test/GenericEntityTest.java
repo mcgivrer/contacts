@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.capgemini.samples.applications.contacts.test.persistence;
+package com.capgemini.samples.applications.contacts.persistence.test;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
