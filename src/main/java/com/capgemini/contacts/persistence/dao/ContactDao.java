@@ -9,6 +9,7 @@ import com.capgemini.contacts.persistence.GenericDao;
 import com.capgemini.contacts.persistence.model.Contact;
 
 /**
+ * The Contact DAO to access Contact entity persistence.
  * @author FDELORME
  * 
  */

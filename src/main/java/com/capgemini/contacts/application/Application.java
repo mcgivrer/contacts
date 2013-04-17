@@ -3,8 +3,6 @@ package com.capgemini.contacts.application;
 import java.util.HashSet;
 import java.util.Set;
 
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 import javax.ws.rs.ApplicationPath;
 
 import org.slf4j.Logger;
@@ -18,11 +16,10 @@ public class Application extends javax.ws.rs.core.Application{
 
 	@Override
 	public Set<Object> getSingletons() {
-		logger.debug("Entering Application.getSingletons()");
 		ContactService contactService = new ContactService();
 		Set<Object> singletons = new HashSet<Object>();
 		singletons.add(contactService);
-		logger.debug("Exiting Application.getSingletons()");
+		logger.info("ContactsService is ready at work.");
 		return singletons;
 	}
 

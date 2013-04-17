@@ -312,7 +312,7 @@ inpired by http://wpcertification.blogspot.fr/2012/06/using-jpa-in-rest-web-appl
 
 					<stopPort>9912</stopPort>
 					<stopKey>123</stopKey>
-					<jettyXml>src/main/webapp/WEB-INF/jetty.xml</jettyXml>
+					<!-- jettyXml>src/main/webapp/WEB-INF/jetty.xml</jettyXml -->
 					<classesDirectory>${build.directory}/classes</classesDirectory>
 
 
