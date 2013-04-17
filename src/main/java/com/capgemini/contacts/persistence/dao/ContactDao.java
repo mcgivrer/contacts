@@ -26,7 +26,18 @@ public class ContactDao extends GenericDao<Contact, Long> {
 	 * 
 	 * @param emf
 	 */
+	public ContactDao(String unitName) {
+		super(unitName);
+	}
+
+	/**
+	 * Parameterized constructor.
+	 * 
+	 * @param emf
+	 */
 	public ContactDao(EntityManagerFactory emf) {
 		super(emf);
 	}
+
+
 }

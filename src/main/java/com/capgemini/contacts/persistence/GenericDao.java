@@ -70,12 +70,14 @@ public class GenericDao<T, PK> {
 		Class<T> entityClass = (Class<T>) genericSuperClass
 				.getActualTypeArguments()[0];
 		this.entityClass = entityClass;
+	}
 
+	public GenericDao(String unitName) {
+		this();
 		if (emf == null) {
-			emf = Persistence.createEntityManagerFactory("contacts");
+			emf = Persistence.createEntityManagerFactory(unitName);
 			logger.debug("Entity Manager Factory Initialiazed");
 		}
-
 		init();
 	}
 
@@ -103,11 +105,11 @@ public class GenericDao<T, PK> {
 	 * 
 	 * @return
 	 */
-	public List<T> getAll() {
+	public List<T> findAll() {
 		logger.debug(String.format(
 				"Retrieve all entities %s without pagination...",
 				entityClass.getSimpleName()));
-		this.list = getPaginated(0, -1);
+		this.list = findAll(0, -1);
 		logger.debug("done.");
 		return this.list;
 	}
@@ -127,7 +129,7 @@ public class GenericDao<T, PK> {
 	 * </p>
 	 */
 	@SuppressWarnings("unchecked")
-	public List<T> getPaginated(int offset, int pageSize) {
+	public List<T> findAll(int offset, int pageSize) {
 
 		logger.debug(String.format("Retrieve entities %s...",
 				entityClass.getSimpleName()));
@@ -150,17 +152,17 @@ public class GenericDao<T, PK> {
 	}
 
 	/**
-	 * Retrieve the <code>entity</code> T on its primaryKey <code>pk</code>.
+	 * Retrieve the <code>entity</code> T on its primaryKey <code>id</code>.
 	 * 
-	 * @param pk
-	 *            primary key for th T entity.
+	 * @param id
+	 *            primary key for the T entity.
 	 * @return
 	 */
-	public T find(PK pk) {
+	public T findById(PK id) {
 		T entity = null;
 		logger.debug(String.format(
-				"Retrieve Entity %s with Primary key %s ...", entityClass, pk));
-		entity = em.find(entityClass, pk);
+				"Retrieve Entity %s with Primary key %s ...", entityClass, id));
+		entity = em.find(entityClass, id);
 		logger.debug("done.");
 		return entity;
 	}
@@ -176,7 +178,7 @@ public class GenericDao<T, PK> {
 				entityClass.getSimpleName()));
 		try {
 
-			entity = em.merge(entity);
+			em.persist(entity);
 			logger.debug(String.format("insert %s :  %s",
 					entityClass.getSimpleName(), entity));
 		} catch (PersistenceException e) {
@@ -186,13 +188,19 @@ public class GenericDao<T, PK> {
 		return entity;
 	}
 
-	public T delete(PK pk) {
+	/**
+	 * Delete an entity on its <code>id</code>.
+	 * 
+	 * @param id
+	 * @return
+	 */
+	public T delete(PK id) {
 		logger.debug(String.format("Delete Entity %s on Primary key %s ...",
-				entityClass, pk));
+				entityClass, id));
 		T entity = null;
 		try {
 
-			entity = em.find(entityClass, pk);
+			entity = em.find(entityClass, id);
 			em.remove(entity);
 			logger.debug(String.format("remove entity %s(%s)", entityClass,
 					entity));
@@ -256,8 +264,11 @@ public class GenericDao<T, PK> {
 	 * </p>
 	 * 
 	 * @param filename
+	 *            name of the YAML file containing data to load into the Entity
+	 *            persistence table.
 	 * @return
 	 */
+	@SuppressWarnings("unchecked")
 	public void loadFromYaml(String filename) {
 		FileReader fileReader;
 		Map<String, Object> persistedEntities = new HashMap<String, Object>();
@@ -269,11 +280,6 @@ public class GenericDao<T, PK> {
 				boolean trasnsactionActivated = false;
 				Yaml yaml = new Yaml();
 				try {
-					trasnsactionActivated = em.getTransaction() != null
-							& em.getTransaction().isActive();
-					if (!trasnsactionActivated) {
-						em.getTransaction().begin();
-					}
 					List<?> entities = (List<?>) yaml.load(fileReader);
 					for (Object entity : entities) {
 						@SuppressWarnings("unchecked")
@@ -292,7 +298,7 @@ public class GenericDao<T, PK> {
 										.forName(className);
 								entityConverted = om.convertValue(lhm.get(key),
 										entityClassToInstanciate);
-								em.persist(entityConverted);
+								this.save((T)entityConverted);
 
 								persistedEntities.put(id, entityConverted);
 								logger.debug(String.format(

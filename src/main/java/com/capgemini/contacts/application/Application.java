@@ -19,8 +19,7 @@ public class Application extends javax.ws.rs.core.Application{
 	@Override
 	public Set<Object> getSingletons() {
 		logger.debug("Entering Application.getSingletons()");
-		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("contacts");
-		ContactService contactService = new ContactService(entityManagerFactory);
+		ContactService contactService = new ContactService();
 		Set<Object> singletons = new HashSet<Object>();
 		singletons.add(contactService);
 		logger.debug("Exiting Application.getSingletons()");

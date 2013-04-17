@@ -2,8 +2,6 @@ package com.capgemini.contacts.services;
 
 import java.util.List;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.FormParam;
@@ -25,16 +23,13 @@ import com.capgemini.contacts.persistence.model.Contact;
 public class ContactService {
 
 	Logger logger = LoggerFactory.getLogger(ContactService.class);
+	ContactDao contacts = new ContactDao("contacts");
 
-	EntityManagerFactory entityManagerFactory = null;
-	EntityManager entityManager = null;
-
-	ContactDao contacts = new ContactDao();
-
-	public ContactService(EntityManagerFactory entityManagerFactory) {
-		this.entityManagerFactory = entityManagerFactory;
-		this.entityManager = entityManagerFactory.createEntityManager();
+	
+	public ContactService() {
+		// TODO Auto-generated constructor stub
 	}
+	
 
 	@SuppressWarnings("unchecked")
 	@GET
@@ -42,7 +37,7 @@ public class ContactService {
 	public List<Contact> getContactList() {
 		logger.debug("Entering ContactService.getContactList()");
 
-		return contacts.getAll();
+		return contacts.findAll();
 	}
 
 	@SuppressWarnings("unchecked")
@@ -52,7 +47,7 @@ public class ContactService {
 	public List<Contact> paginatedContactList(@PathParam("offset") int offset,
 			@PathParam("number") int number) {
 
-		return contacts.getPaginated(offset, number);
+		return contacts.findAll(offset, number);
 	}
 
 	@POST
@@ -81,7 +76,7 @@ public class ContactService {
 		logger.debug("Entering ContactService.getContact() contactId"
 				+ contactId);
 
-		Contact contact = contacts.find(contactId);
+		Contact contact = contacts.findById(contactId);
 		logger.debug("Exiting ContactService.getContact()");
 
 		return contact;
@@ -102,17 +97,7 @@ public class ContactService {
 		contact.setFirstName(firstName);
 		contact.setLastName(lastName);
 		contact.setEmail(email);
-		try {
-			entityManager.getTransaction().begin();
-			entityManager.merge(contact);
-			entityManager.getTransaction().commit();
-		} catch (Throwable t) {
-			if (entityManager.getTransaction().isActive())
-				entityManager.getTransaction().rollback();
-			contact = null;
-		} finally {
-			entityManager.close();
-		}
+		contacts.save(contact);
 		logger.debug("Exiting ContactService.updateContact()");
 
 		return contact;
