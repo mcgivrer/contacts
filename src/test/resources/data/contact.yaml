@@ -4,7 +4,7 @@
     firstName: Frédéric
     email: frederic.delorme@capgemini.com
 - com.capgemini.contacts.persistence.model.Contact(gse):
-    username: gscheibel
+    username: gscheibe
     lastName: Scheibel
     firstName: Guillaume
     email: guillaume.scheibel@capgemini.com

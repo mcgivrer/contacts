@@ -269,9 +269,9 @@ public class GenericDao<T, PK> {
 	 * @return
 	 */
 	@SuppressWarnings("unchecked")
-	public void loadFromYaml(String filename) {
+	public Map<String, T> loadFromYaml(String filename) {
 		FileReader fileReader;
-		Map<String, Object> persistedEntities = new HashMap<String, Object>();
+		Map<String, T> persistedEntities = new HashMap<String, T>();
 		try {
 			fileReader = new FileReader(this.getClass().getResource("/")
 					.getPath()
@@ -300,11 +300,12 @@ public class GenericDao<T, PK> {
 										entityClassToInstanciate);
 								this.save((T)entityConverted);
 
-								persistedEntities.put(id, entityConverted);
+								persistedEntities.put(id, (T)entityConverted);
 								logger.debug(String.format(
 										"Entity[%s]%s => %s", entity.getClass()
 												.getSimpleName(), entity,
 										entityConverted.toString()));
+								
 							} catch (ClassNotFoundException e) {
 								logger.fatal(String.format(
 										"Unknown class %s for entity %s",
@@ -330,6 +331,7 @@ public class GenericDao<T, PK> {
 			logger.fatal(String.format(
 					"Unable to read entities from %s Yaml file", filename));
 		}
+		return persistedEntities;
 
 	}
 }

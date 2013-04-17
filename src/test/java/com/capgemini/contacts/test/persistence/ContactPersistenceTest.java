@@ -2,6 +2,8 @@ package com.capgemini.contacts.test.persistence;
 
 import static org.junit.Assert.assertEquals;
 
+import java.util.Map;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -48,7 +50,10 @@ public class ContactPersistenceTest extends GenericEntityTest<Contact> {
 	 */
 	@Test
 	public void loadContactFromYamlTest() {
-		contacts.loadFromYaml("data/contact.yaml");
+		Map<String,Contact> list = contacts.loadFromYaml("data/contact.yaml");
+		assertEquals("contact.yaml are not loaded !",true,list.get("fde").getUsername().equals("fdelorme"));
+		assertEquals("contact.yaml are not loaded !",true,list.get("gse").getUsername().equals("gscheibe"));
+		assertEquals("contact.yaml are not loaded !",true,list.get("jmu").getUsername().equals("jmuhr"));
 	}
 
 }
