@@ -1,0 +1,24 @@
+html>* {
+	font-family: arial, sans-serif;
+}
+pre{
+	font-size:10pt;
+	font-family: courrier new;
+	background-color:#eee;
+	border-radius:3pt;
+	padding:11px;
+}
+code{
+	font-family: courier new;
+	color:#666;
+}
+blockquote {
+	border-left:4px solid navy;
+	background-color: #cee;
+	border-radius:4px;
+	padding:10px 20px;
+	padding-left:20px;
+	margin:20px;
+	margin-left:20px;
+	color:navy;
+}
