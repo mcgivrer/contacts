@@ -1,5 +1,7 @@
 h1. Author
 
+"Home":/wiki/Home.md
+
 p. Frédéric Delorme is a solution architect working at Capgemini Est (Strasbourg, France).
 
 

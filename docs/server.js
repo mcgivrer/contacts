@@ -1,10 +1,11 @@
-var http       = require('http'),
-    url        = require('url'),
-    textile    = require('textile-js'),
-    markdown   = require('marked'),
-    fs         = require('fs'),
-    filesys    = require('sys'),
-    path       = require('path');
+var http         = require('http'),
+    url          = require('url'),
+    textile      = require('textile-js'),
+    marked       = require('marked'),
+    highlight  = require('highlight'),
+    fs           = require('fs'),
+    filesys      = require('sys'),
+    path         = require('path');
 
 /**
  * overload String objecty with startsWith method.
@@ -21,9 +22,9 @@ String.prototype.endsWith = function(suffix) {
 };
 
 /**
- * Configuration for markdown
+ * Configuration for marked
  */
-markdown.setOptions({
+marked.setOptions({
   gfm: true,
   tables: true,
   breaks: false,
@@ -31,7 +32,18 @@ markdown.setOptions({
   sanitize: true,
   smartLists: true,
   langPrefix: 'lang-',
-  highlight: null,
+  highlight: function(code, lang) {
+    if (lang === 'js') {
+      return highlight.javascript(code);
+    }
+    /*else if (lang === 'xml') {
+      return highlight.xml(code);
+    }*/
+    else if (lang === 'java') {
+      return highlight.java(code);
+    }
+    return code;
+  }
 });
 
 /**
@@ -75,12 +87,12 @@ function sendHttpError(response, errCode,message){
 
 /**
  * Render the <code>page</code> object instance on the 
- * <code>response</code> object in Markdown syntax parser.
+ * <code>response</code> object in marked syntax parser.
  *
  * @param response The Http resposnse where to write page content.
  * @param page Page object to convert to HTML.
  */
-function renderTextile(response, page){
+function renderTextilePage(response, page){
   response.writeHeader(200, {"Content-Type": "text/html"});
   page.content = textile(page.content);
   response.write(page.toHtml(), "binary");
@@ -94,9 +106,15 @@ function renderTextile(response, page){
  * @param response The Http resposnse where to write page content.
  * @param page Page object to convert to HTML.
  */
-function renderMarkdown(response, page){
+function renderMarkdownPage(response, page){
   response.writeHeader(200, {"Content-Type": "text/html"});
-  page.content = markdown(page.content);
+  // retrieve first H1 title page.
+  var treelex  = marked.lexer(page.content);
+  page.title   = treelex[0].text;
+  // convert to HTML content page.
+  page.content = marked(page.content);
+
+  // write page to response.
   response.write(page.toHtml(), "binary");  
   response.end();  
 }
@@ -124,50 +142,56 @@ function serveFile(response, page){
  * @param response
  */
 var ServeTextileDoc = function(request, response){
-  var my_path = url.parse(request.url).pathname;  
-  var full_path = path.join(process.cwd(),my_path);  
-  fs.exists(full_path,function(exists){  
-      if(!exists){
+  var urlPath = url.parse(request.url).pathname;  
+  if(urlPath=="/"){
+    // redirect to the wiki Home page
+    response.writeHead(302, {'Location': '/wiki/Home.md'});
+    response.end();
+  }else{
+    var filePath = path.join(process.cwd(),urlPath);  
+    fs.exists(filePath,function(exists){  
+        if(!exists){
 
-        sendHttpError(response,404,"Page for url: <code>"+my_path+"</code> does not exist !");0
+          sendHttpError(response,404,"Page for url: <code>"+urlPath+"</code> does not exist !");0
 
-      } else {
-        fs.readFile(full_path, "binary", function(err, data){
-          if(err) {
+        } else {
+          fs.readFile(filePath, "binary", function(err, data){
+            if(err) {
 
-            sendHttpError(response, 500, "Server error while accessing url: <code>"+my_path+"</code> !");
+              sendHttpError(response, 500, "Server error while accessing url: <code>"+urlPath+"</code> !");
 
-          } else {  
+            } else {  
 
-            console.log("read file:"+full_path);
-            response.writeHeader(200, {"Content-Type": "text/plain"});
+              console.log("read file:"+filePath);
+              response.writeHeader(200, {"Content-Type": "text/plain"});
 
-            // Prepare page object to manipulate data.
-            var page = Page;
-            page.title="Doc";
-            page.content=""+data;
-            page.url = request.url;
-            page.filepath =  full_path;
-            
-            if(full_path.endsWith(".md")){
-              console.log("Serve Markdown text for page :"+ my_path)
-              renderMarkdown(response, page, full_path, data);
-  
+              // Prepare page object to manipulate data.
+              var page = Page;
+              page.title="Doc";
+              page.content=""+data;
+              page.url = request.url;
+              page.filepath =  filePath;
+              
+              if(filePath.endsWith(".md")){
+                console.log("Serve marked text for page :"+ urlPath)
+                renderMarkdownPage(response, page, filePath, data);
+    
 
-            }else if(full_path.endsWith(".textile")){
-              console.log("Serve Textile text for page :"+ my_path)
-              renderTextile(response, page, full_path);
+              }else if(filePath.endsWith(".textile")){
+                console.log("Serve Textile text for page :"+ urlPath)
+                renderTextilePage(response, page, filePath);
 
-            }else{
-              console.log("Serve simple file for :"+ my_path)
+              }else{
+                console.log("Serve file for :"+ urlPath)
 
-              serveFile(response,page);
+                serveFile(response,page);
+              }
+
             }
-
-          }
-        });              
-      }
-  });  
+          });              
+        }
+    });  
+  }
 };
 
 // Start the http server with this brand new handler.
