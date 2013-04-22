@@ -2,7 +2,8 @@ var http         = require('http'),
     url          = require('url'),
     textile      = require('textile-js'),
     marked       = require('marked'),
-    highlight  = require('highlight'),
+    highlight    = require('highlight'),
+    mustache     = require('mustache'),
     fs           = require('fs'),
     filesys      = require('sys'),
     path         = require('path');
@@ -49,27 +50,88 @@ marked.setOptions({
 /**
  * Simple object for a web page.
  */
-var Page = {
-  title:      "Doc",
-  content:    "",
-  stylesheet: "css/doc.css",
-  url:        "",
-  filepath:   "",
-  toHtml:function(){
-    return  "<!DOCTYPE html >"
+var Page = function(){
+  /** Page title*/
+  this.title       = "Doc";
+  /** Content of the page */
+  this.content     = "";
+  /** stylesheet to use with this page */
+  this.stylesheet  = "css/doc.css";
+  this.url         = "";
+  this.filepath    = "";
+  // template Mustache to generate page.
+  this.template    = "";
+
+  /**
+   * Generate CSS link.
+   */
+  this.includeCSS = function(){
+    var cssListToHtml = "";
+    this.stylesheet = (this.stylesheet.endsWith(",")?this.stylesheet:this.stylesheet+",")
+    var csslist = this.stylesheet.split(",");
+    for(css in csslist){
+      if(csslist[css]!=""){
+        cssListToHtml+=mustache.render("<link rel=\"stylesheet\" type=\"text/css\" href=\"{{css}}\" />",{"css":csslist[css]});;
+      }
+    }
+    return cssListToHtml;
+  }
+
+  this.pageBase = function (page){
+    return "<!DOCTYPE html >"
           + "<html>"
           + "<head>"
           + "<meta charset=\"UTF-8\">"
-          + "<title>"+this.title+"</title>"
-          + "<link rel=\"stylesheet\" type=\"text/css\" href=\""+this.stylesheet+"\" />"
+          + "<title>"+page.title+"</title>"
+          + page.includeCSS()
           + "</head>"
-          + "<body>" + this.content + "</body>"
+          + "<body>" + page.content + "</body>"
           + "</html>";
+  }
+  /**
+   * Create HTML page with all attributes.
+   */
+  this.toHtml = function(){
+    var pageHTML =  this.pageBase(this);
+     
+    if(this.template!=""){
+
+      var templatePath = path.join(process.cwd(),this.template); 
+
+      fs.exists(templatePath,function(exists){
+
+        fs.readFile(templatePath, "binary", function(err, data){
+
+          // Template not found !
+
+          if(err){
+
+            console.log("Unable to read template:[" + templatePath + "]");
+            this.content= "<style>p.error{color:red;background-color:#300;padding:10px;border:1px solid red;border-left:4px solid red;}</style>"
+                         +"<p class=\"error\"/>Unable to read template page from "+templatePath+"!</p>";
+            this.title="Http Server Error";
+            this.template="";
+            pageHTML = this.pageBase(this);
+           
+          // tempplate exists, try to generate page with Mustache. 
+
+          }else{
+
+            console.log("Use template:[file:" + templatePath + ", data:["+data+"]]");
+            pageHTML = mustache.render(""+data, {"page": this} );
+            console.log("generate:["+pageHTML+"]");
+          }
+
+        });
+      });
+    }
+    return pageHTML;
   }
 };
 
 /**
- * Send a formated HTTP Server Error <code>errCode</code> with <code>message</code> to <code>response</code>.
+ * Send a formated HTTP Server Error <code>errCode</code> with 
+ * <code>message</code> to <code>response</code>.
  *
  * @param response The http response where to write error page.
  * @param errCode the HTTP Error code.
@@ -77,9 +139,11 @@ var Page = {
  */
 function sendHttpError(response, errCode,message){
   response.writeHeader(errCode, {"Content-Type": "text/html"});
-  var err = Page;
+  var err = new Page();
+  err.template="/template.html"
   err.title="Server Error (code:"+errCode+")";
   err.content="<h1>Error</h1>\n<h2>Error "+errCode+"</h2>\n<p>"+message+"</p>";
+  err.template="wiki/template.html";
   response.write(err.toHtml());      
   response.end();
   err=null;
@@ -111,6 +175,10 @@ function renderMarkdownPage(response, page){
   // retrieve first H1 title page.
   var treelex  = marked.lexer(page.content);
   page.title   = treelex[0].text;
+
+  // Set the default template
+  page.template = "/wiki/template.html";
+
   // convert to HTML content page.
   page.content = marked(page.content);
 
@@ -166,24 +234,26 @@ var ServeTextileDoc = function(request, response){
               response.writeHeader(200, {"Content-Type": "text/plain"});
 
               // Prepare page object to manipulate data.
-              var page = Page;
+              var page = new Page();
               page.title="Doc";
               page.content=""+data;
               page.url = request.url;
               page.filepath =  filePath;
               
               if(filePath.endsWith(".md")){
+
                 console.log("Serve marked text for page :"+ urlPath)
                 renderMarkdownPage(response, page, filePath, data);
     
 
               }else if(filePath.endsWith(".textile")){
+
                 console.log("Serve Textile text for page :"+ urlPath)
                 renderTextilePage(response, page, filePath);
 
               }else{
-                console.log("Serve file for :"+ urlPath)
 
+                console.log("Serve file for :"+ urlPath)
                 serveFile(response,page);
               }
 
