@@ -1,4 +1,6 @@
-# Welcome to the Contacts home [![Build Status](https://travis-ci.org/mcgivrer/contacts.png)](https://travis-ci.org/mcgivrer/contacts)
+# Contacts home page[![Build Status](https://travis-ci.org/mcgivrer/contacts.png)](https://travis-ci.org/mcgivrer/contacts)
+
+[Author](/wiki/Author.textile)
 
 ## Description
 
