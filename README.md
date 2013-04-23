@@ -1,4 +1,6 @@
-# Contacts [![Build Status](https://travis-ci.org/mcgivrer/contacts.png)](https://travis-ci.org/mcgivrer/contacts)
+# Contacts
+
+[![Build Status](https://travis-ci.org/mcgivrer/contacts.png)](https://travis-ci.org/mcgivrer/contacts)
 
 ## Description
 
@@ -18,8 +20,7 @@ concept on REST and HTML5+CSS3+AngularJS UI application usage.
 
 specific env configuration are stored into the `assemble/env` directory. Each subdirectory expose environment contextual files.
 
-
-    assemble/
+     assemble/
       env/
         local/
       	  WEB-INF/
@@ -33,7 +34,6 @@ specific env configuration are stored into the `assemble/env` directory. Each su
         prod/
           ...
 
-
 ## Server Jetty
 
 to start this web app with the embedded Jetty server, just execute the following command line:
@@ -44,7 +44,7 @@ where `[environment]` is one of the directory in the `assemble/env/` path.
 
 ## Users ?
 
-The file `users.properties`define authorized user list to access application in the Embedded Jetty run mode.
+The file `users.properties` define authorized user list to access application in the Embedded Jetty run mode.
 
 
 Frédéric Delorme. 
