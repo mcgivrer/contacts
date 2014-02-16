@@ -273,9 +273,8 @@ public class GenericDao<T, PK> {
 		FileReader fileReader;
 		Map<String, T> persistedEntities = new HashMap<String, T>();
 		try {
-			fileReader = new FileReader(this.getClass().getResource("/")
-					.getPath()
-					+ filename);
+			fileReader = new FileReader(this.getClass().getResource("/"+filename)
+					.getPath());
 			if (filename != null && !filename.equals("") && fileReader != null) {
 				boolean trasnsactionActivated = false;
 				Yaml yaml = new Yaml();
@@ -329,7 +328,7 @@ public class GenericDao<T, PK> {
 		} catch (FileNotFoundException e) {
 			list = null;
 			logger.fatal(String.format(
-					"Unable to read entities from %s Yaml file", filename));
+					"Unable to read entities from '%s' Yaml file", filename));
 		}
 		return persistedEntities;
 
