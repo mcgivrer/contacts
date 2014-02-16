@@ -1,8 +1,9 @@
-/target
-/logs
-/db
+/target/
+/logs/
+/db/
 /.settings/
 /.metadata/
 .project
 .classpath
 /.idea/
+/Remote*
