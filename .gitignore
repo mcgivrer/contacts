@@ -1,8 +1,8 @@
 /target
-/.settings
 /logs
 /db
+/.settings/
+/.metadata/
 .project
 .classpath
-
-/target
+/.idea/
